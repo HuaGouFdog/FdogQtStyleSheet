@@ -16,7 +16,7 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
-    void Labelshow(int value);
+    void Labelshow();
 
 private slots:
 
@@ -49,6 +49,13 @@ private slots:
     void on_spinBox_3_valueChanged(int arg1);
 
     void on_comboBox_currentIndexChanged(const QString &arg1);
+
+    void on_spinBox_2_valueChanged(int arg1);
+
+
+    void on_spinBox_valueChanged(int arg1);
+
+    void on_fontComboBox_currentFontChanged(const QFont &f);
 
 private:
     Ui::MainWindow *ui;

@@ -13,7 +13,9 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QComboBox>
+#include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QFontComboBox>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QGroupBox>
@@ -21,10 +23,14 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QProgressBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QRadioButton>
+#include <QtWidgets/QScrollBar>
 #include <QtWidgets/QSlider>
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QTabWidget>
+#include <QtWidgets/QTableWidget>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -109,13 +115,40 @@ public:
     QLabel *label;
     QGroupBox *groupBox_8;
     QPushButton *pushButton;
+    QGroupBox *groupBox_9;
+    QLineEdit *lineEdit_13;
+    QGroupBox *groupBox_10;
+    QComboBox *comboBox_6;
+    QGroupBox *groupBox_11;
+    QSpinBox *spinBox_5;
+    QGroupBox *groupBox_12;
+    QCheckBox *checkBox;
+    QGroupBox *groupBox_13;
+    QRadioButton *radioButton;
+    QGroupBox *groupBox_14;
+    QDialogButtonBox *buttonBox;
+    QWidget *tab_5;
+    QGroupBox *groupBox_17;
+    QScrollBar *horizontalScrollBar;
+    QScrollBar *verticalScrollBar;
+    QGroupBox *groupBox_18;
+    QSlider *verticalSlider;
+    QSlider *horizontalSlider_13;
+    QGroupBox *groupBox_19;
+    QProgressBar *progressBar;
     QWidget *tab_2;
+    QGroupBox *groupBox_15;
+    QTabWidget *tabWidget_2;
+    QWidget *tab_3;
+    QWidget *tab_4;
+    QGroupBox *groupBox_16;
+    QTableWidget *tableWidget;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(970, 561);
+        MainWindow->resize(985, 668);
         MainWindow->setMinimumSize(QSize(970, 500));
         QIcon icon;
         icon.addFile(QStringLiteral(":/lib/icon.jpg"), QSize(), QIcon::Normal, QIcon::Off);
@@ -124,7 +157,7 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         groupBox = new QGroupBox(centralWidget);
         groupBox->setObjectName(QStringLiteral("groupBox"));
-        groupBox->setGeometry(QRect(9, 9, 951, 301));
+        groupBox->setGeometry(QRect(9, 9, 965, 301));
         groupBox->setMinimumSize(QSize(0, 0));
         groupBox->setStyleSheet(QLatin1String("QSlider::groove:horizontal {\n"
 "    border: 1px solid #4A708B;\n"
@@ -452,13 +485,13 @@ public:
         label_6->setGeometry(QRect(10, 22, 54, 16));
         fontComboBox = new QFontComboBox(groupBox_5);
         fontComboBox->setObjectName(QStringLiteral("fontComboBox"));
-        fontComboBox->setGeometry(QRect(70, 22, 80, 20));
+        fontComboBox->setGeometry(QRect(70, 22, 100, 20));
         label_11 = new QLabel(groupBox_5);
         label_11->setObjectName(QStringLiteral("label_11"));
         label_11->setGeometry(QRect(10, 48, 54, 16));
         spinBox = new QSpinBox(groupBox_5);
         spinBox->setObjectName(QStringLiteral("spinBox"));
-        spinBox->setGeometry(QRect(70, 49, 80, 18));
+        spinBox->setGeometry(QRect(70, 49, 100, 18));
         label_12 = new QLabel(groupBox_5);
         label_12->setObjectName(QStringLiteral("label_12"));
         label_12->setGeometry(QRect(10, 74, 16, 16));
@@ -467,10 +500,10 @@ public:
         label_13->setGeometry(QRect(10, 74, 54, 16));
         spinBox_2 = new QSpinBox(groupBox_5);
         spinBox_2->setObjectName(QStringLiteral("spinBox_2"));
-        spinBox_2->setGeometry(QRect(230, 75, 80, 18));
+        spinBox_2->setGeometry(QRect(250, 75, 100, 18));
         label_18 = new QLabel(groupBox_5);
         label_18->setObjectName(QStringLiteral("label_18"));
-        label_18->setGeometry(QRect(170, 74, 54, 16));
+        label_18->setGeometry(QRect(190, 74, 54, 16));
         comboBox = new QComboBox(groupBox_5);
         comboBox->addItem(QString());
         comboBox->addItem(QString());
@@ -483,16 +516,16 @@ public:
         comboBox->addItem(QString());
         comboBox->addItem(QString());
         comboBox->setObjectName(QStringLiteral("comboBox"));
-        comboBox->setGeometry(QRect(70, 74, 80, 20));
+        comboBox->setGeometry(QRect(70, 74, 100, 20));
         spinBox_3 = new QSpinBox(groupBox_5);
         spinBox_3->setObjectName(QStringLiteral("spinBox_3"));
-        spinBox_3->setGeometry(QRect(390, 25, 80, 18));
+        spinBox_3->setGeometry(QRect(430, 25, 100, 18));
         label_19 = new QLabel(groupBox_5);
         label_19->setObjectName(QStringLiteral("label_19"));
-        label_19->setGeometry(QRect(330, 24, 54, 16));
+        label_19->setGeometry(QRect(370, 24, 54, 16));
         label_20 = new QLabel(groupBox_5);
         label_20->setObjectName(QStringLiteral("label_20"));
-        label_20->setGeometry(QRect(330, 50, 54, 16));
+        label_20->setGeometry(QRect(370, 50, 54, 16));
         comboBox_2 = new QComboBox(groupBox_5);
         comboBox_2->addItem(QString());
         comboBox_2->addItem(QString());
@@ -504,31 +537,31 @@ public:
         comboBox_2->addItem(QString());
         comboBox_2->addItem(QString());
         comboBox_2->setObjectName(QStringLiteral("comboBox_2"));
-        comboBox_2->setGeometry(QRect(390, 50, 80, 20));
+        comboBox_2->setGeometry(QRect(430, 50, 100, 20));
         label_21 = new QLabel(groupBox_5);
         label_21->setObjectName(QStringLiteral("label_21"));
         label_21->setGeometry(QRect(10, 100, 54, 16));
         spinBox_4 = new QSpinBox(groupBox_5);
         spinBox_4->setObjectName(QStringLiteral("spinBox_4"));
-        spinBox_4->setGeometry(QRect(230, 25, 80, 18));
+        spinBox_4->setGeometry(QRect(250, 25, 100, 18));
         comboBox_3 = new QComboBox(groupBox_5);
         comboBox_3->addItem(QString());
         comboBox_3->addItem(QString());
         comboBox_3->addItem(QString());
         comboBox_3->setObjectName(QStringLiteral("comboBox_3"));
-        comboBox_3->setGeometry(QRect(230, 100, 80, 20));
+        comboBox_3->setGeometry(QRect(250, 100, 100, 20));
         label_22 = new QLabel(groupBox_5);
         label_22->setObjectName(QStringLiteral("label_22"));
-        label_22->setGeometry(QRect(170, 100, 54, 16));
+        label_22->setGeometry(QRect(190, 100, 54, 16));
         comboBox_4 = new QComboBox(groupBox_5);
         comboBox_4->addItem(QString());
         comboBox_4->addItem(QString());
         comboBox_4->addItem(QString());
         comboBox_4->setObjectName(QStringLiteral("comboBox_4"));
-        comboBox_4->setGeometry(QRect(70, 100, 80, 20));
+        comboBox_4->setGeometry(QRect(70, 100, 100, 20));
         label_23 = new QLabel(groupBox_5);
         label_23->setObjectName(QStringLiteral("label_23"));
-        label_23->setGeometry(QRect(170, 50, 54, 16));
+        label_23->setGeometry(QRect(190, 50, 54, 16));
         comboBox_5 = new QComboBox(groupBox_5);
         comboBox_5->addItem(QString());
         comboBox_5->addItem(QString());
@@ -536,13 +569,13 @@ public:
         comboBox_5->addItem(QString());
         comboBox_5->addItem(QString());
         comboBox_5->setObjectName(QStringLiteral("comboBox_5"));
-        comboBox_5->setGeometry(QRect(230, 50, 80, 20));
+        comboBox_5->setGeometry(QRect(250, 50, 100, 20));
         label_24 = new QLabel(groupBox_5);
         label_24->setObjectName(QStringLiteral("label_24"));
-        label_24->setGeometry(QRect(170, 24, 54, 16));
+        label_24->setGeometry(QRect(190, 24, 54, 16));
         groupBox_3 = new QGroupBox(groupBox);
         groupBox_3->setObjectName(QStringLiteral("groupBox_3"));
-        groupBox_3->setGeometry(QRect(570, 10, 371, 281));
+        groupBox_3->setGeometry(QRect(564, 10, 391, 281));
         groupBox_3->setMinimumSize(QSize(0, 0));
         groupBox_3->setMaximumSize(QSize(16777215, 16777215));
         verticalLayout = new QVBoxLayout(groupBox_3);
@@ -560,34 +593,160 @@ public:
 
         tabWidget = new QTabWidget(centralWidget);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
-        tabWidget->setGeometry(QRect(10, 310, 951, 241));
+        tabWidget->setGeometry(QRect(10, 310, 967, 351));
         tabWidget->setMinimumSize(QSize(0, 0));
         tab = new QWidget();
         tab->setObjectName(QStringLiteral("tab"));
         groupBox_2 = new QGroupBox(tab);
         groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
-        groupBox_2->setGeometry(QRect(10, 10, 231, 81));
+        groupBox_2->setGeometry(QRect(10, 20, 221, 81));
         label = new QLabel(groupBox_2);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(40, 30, 141, 31));
-        label->setStyleSheet(QLatin1String("background-color: rgb(170, 170, 255);\n"
-"border-radius:5px;"));
+        label->setGeometry(QRect(40, 30, 140, 30));
+        label->setStyleSheet(QStringLiteral(""));
         label->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
         groupBox_8 = new QGroupBox(tab);
         groupBox_8->setObjectName(QStringLiteral("groupBox_8"));
-        groupBox_8->setGeometry(QRect(10, 100, 231, 81));
+        groupBox_8->setGeometry(QRect(250, 20, 221, 81));
         pushButton = new QPushButton(groupBox_8);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(60, 30, 111, 31));
+        pushButton->setGeometry(QRect(40, 30, 140, 30));
+        groupBox_9 = new QGroupBox(tab);
+        groupBox_9->setObjectName(QStringLiteral("groupBox_9"));
+        groupBox_9->setGeometry(QRect(490, 20, 221, 81));
+        lineEdit_13 = new QLineEdit(groupBox_9);
+        lineEdit_13->setObjectName(QStringLiteral("lineEdit_13"));
+        lineEdit_13->setGeometry(QRect(40, 30, 140, 30));
+        QFont font1;
+        font1.setFamily(QStringLiteral("80 Decibels"));
+        lineEdit_13->setFont(font1);
+        groupBox_10 = new QGroupBox(tab);
+        groupBox_10->setObjectName(QStringLiteral("groupBox_10"));
+        groupBox_10->setGeometry(QRect(250, 120, 221, 81));
+        comboBox_6 = new QComboBox(groupBox_10);
+        comboBox_6->addItem(QString());
+        comboBox_6->addItem(QString());
+        comboBox_6->addItem(QString());
+        comboBox_6->setObjectName(QStringLiteral("comboBox_6"));
+        comboBox_6->setGeometry(QRect(40, 30, 140, 30));
+        groupBox_11 = new QGroupBox(tab);
+        groupBox_11->setObjectName(QStringLiteral("groupBox_11"));
+        groupBox_11->setGeometry(QRect(490, 120, 221, 81));
+        spinBox_5 = new QSpinBox(groupBox_11);
+        spinBox_5->setObjectName(QStringLiteral("spinBox_5"));
+        spinBox_5->setGeometry(QRect(40, 30, 140, 30));
+        groupBox_12 = new QGroupBox(tab);
+        groupBox_12->setObjectName(QStringLiteral("groupBox_12"));
+        groupBox_12->setGeometry(QRect(730, 20, 221, 81));
+        checkBox = new QCheckBox(groupBox_12);
+        checkBox->setObjectName(QStringLiteral("checkBox"));
+        checkBox->setGeometry(QRect(50, 30, 140, 30));
+        groupBox_13 = new QGroupBox(tab);
+        groupBox_13->setObjectName(QStringLiteral("groupBox_13"));
+        groupBox_13->setGeometry(QRect(730, 120, 221, 81));
+        radioButton = new QRadioButton(groupBox_13);
+        radioButton->setObjectName(QStringLiteral("radioButton"));
+        radioButton->setGeometry(QRect(40, 30, 140, 30));
+        groupBox_14 = new QGroupBox(tab);
+        groupBox_14->setObjectName(QStringLiteral("groupBox_14"));
+        groupBox_14->setGeometry(QRect(10, 120, 221, 81));
+        buttonBox = new QDialogButtonBox(groupBox_14);
+        buttonBox->setObjectName(QStringLiteral("buttonBox"));
+        buttonBox->setGeometry(QRect(0, 30, 140, 30));
+        buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
         tabWidget->addTab(tab, QString());
+        tab_5 = new QWidget();
+        tab_5->setObjectName(QStringLiteral("tab_5"));
+        groupBox_17 = new QGroupBox(tab_5);
+        groupBox_17->setObjectName(QStringLiteral("groupBox_17"));
+        groupBox_17->setGeometry(QRect(9, 10, 211, 311));
+        horizontalScrollBar = new QScrollBar(groupBox_17);
+        horizontalScrollBar->setObjectName(QStringLiteral("horizontalScrollBar"));
+        horizontalScrollBar->setGeometry(QRect(20, 240, 160, 16));
+        horizontalScrollBar->setOrientation(Qt::Horizontal);
+        verticalScrollBar = new QScrollBar(groupBox_17);
+        verticalScrollBar->setObjectName(QStringLiteral("verticalScrollBar"));
+        verticalScrollBar->setGeometry(QRect(90, 30, 16, 160));
+        verticalScrollBar->setOrientation(Qt::Vertical);
+        groupBox_18 = new QGroupBox(tab_5);
+        groupBox_18->setObjectName(QStringLiteral("groupBox_18"));
+        groupBox_18->setGeometry(QRect(230, 10, 211, 311));
+        verticalSlider = new QSlider(groupBox_18);
+        verticalSlider->setObjectName(QStringLiteral("verticalSlider"));
+        verticalSlider->setGeometry(QRect(90, 30, 22, 160));
+        verticalSlider->setOrientation(Qt::Vertical);
+        horizontalSlider_13 = new QSlider(groupBox_18);
+        horizontalSlider_13->setObjectName(QStringLiteral("horizontalSlider_13"));
+        horizontalSlider_13->setGeometry(QRect(30, 260, 160, 22));
+        horizontalSlider_13->setOrientation(Qt::Horizontal);
+        groupBox_19 = new QGroupBox(tab_5);
+        groupBox_19->setObjectName(QStringLiteral("groupBox_19"));
+        groupBox_19->setGeometry(QRect(450, 10, 491, 311));
+        progressBar = new QProgressBar(groupBox_19);
+        progressBar->setObjectName(QStringLiteral("progressBar"));
+        progressBar->setGeometry(QRect(20, 30, 451, 23));
+        progressBar->setValue(24);
+        tabWidget->addTab(tab_5, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
+        groupBox_15 = new QGroupBox(tab_2);
+        groupBox_15->setObjectName(QStringLiteral("groupBox_15"));
+        groupBox_15->setGeometry(QRect(10, 10, 401, 311));
+        tabWidget_2 = new QTabWidget(groupBox_15);
+        tabWidget_2->setObjectName(QStringLiteral("tabWidget_2"));
+        tabWidget_2->setGeometry(QRect(20, 20, 341, 271));
+        tab_3 = new QWidget();
+        tab_3->setObjectName(QStringLiteral("tab_3"));
+        tabWidget_2->addTab(tab_3, QString());
+        tab_4 = new QWidget();
+        tab_4->setObjectName(QStringLiteral("tab_4"));
+        tabWidget_2->addTab(tab_4, QString());
+        groupBox_16 = new QGroupBox(tab_2);
+        groupBox_16->setObjectName(QStringLiteral("groupBox_16"));
+        groupBox_16->setGeometry(QRect(430, 10, 521, 311));
+        tableWidget = new QTableWidget(groupBox_16);
+        if (tableWidget->columnCount() < 4)
+            tableWidget->setColumnCount(4);
+        QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
+        tableWidget->setHorizontalHeaderItem(0, __qtablewidgetitem);
+        QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
+        tableWidget->setHorizontalHeaderItem(1, __qtablewidgetitem1);
+        QTableWidgetItem *__qtablewidgetitem2 = new QTableWidgetItem();
+        tableWidget->setHorizontalHeaderItem(2, __qtablewidgetitem2);
+        QTableWidgetItem *__qtablewidgetitem3 = new QTableWidgetItem();
+        tableWidget->setHorizontalHeaderItem(3, __qtablewidgetitem3);
+        if (tableWidget->rowCount() < 10)
+            tableWidget->setRowCount(10);
+        QTableWidgetItem *__qtablewidgetitem4 = new QTableWidgetItem();
+        tableWidget->setVerticalHeaderItem(0, __qtablewidgetitem4);
+        QTableWidgetItem *__qtablewidgetitem5 = new QTableWidgetItem();
+        tableWidget->setVerticalHeaderItem(1, __qtablewidgetitem5);
+        QTableWidgetItem *__qtablewidgetitem6 = new QTableWidgetItem();
+        tableWidget->setVerticalHeaderItem(2, __qtablewidgetitem6);
+        QTableWidgetItem *__qtablewidgetitem7 = new QTableWidgetItem();
+        tableWidget->setVerticalHeaderItem(3, __qtablewidgetitem7);
+        QTableWidgetItem *__qtablewidgetitem8 = new QTableWidgetItem();
+        tableWidget->setVerticalHeaderItem(4, __qtablewidgetitem8);
+        QTableWidgetItem *__qtablewidgetitem9 = new QTableWidgetItem();
+        tableWidget->setVerticalHeaderItem(5, __qtablewidgetitem9);
+        QTableWidgetItem *__qtablewidgetitem10 = new QTableWidgetItem();
+        tableWidget->setVerticalHeaderItem(6, __qtablewidgetitem10);
+        QTableWidgetItem *__qtablewidgetitem11 = new QTableWidgetItem();
+        tableWidget->setVerticalHeaderItem(7, __qtablewidgetitem11);
+        QTableWidgetItem *__qtablewidgetitem12 = new QTableWidgetItem();
+        tableWidget->setVerticalHeaderItem(8, __qtablewidgetitem12);
+        QTableWidgetItem *__qtablewidgetitem13 = new QTableWidgetItem();
+        tableWidget->setVerticalHeaderItem(9, __qtablewidgetitem13);
+        tableWidget->setObjectName(QStringLiteral("tableWidget"));
+        tableWidget->setGeometry(QRect(15, 21, 491, 281));
+        tableWidget->horizontalHeader()->setProperty("showSortIndicator", QVariant(false));
+        tableWidget->horizontalHeader()->setStretchLastSection(true);
         tabWidget->addTab(tab_2, QString());
         MainWindow->setCentralWidget(centralWidget);
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -676,21 +835,62 @@ public:
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">background-color: rgba(170, 85, 255,255);</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">border-color: rgba(0, 255, 255,255);</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">color: rgba(0, 255, 255,255);</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right"
-                        ":0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">font: 11pt &quot;80 Decibels&quot;;</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Verdana,Arial,Helvetica,sans-serif'; font-size:12pt; color:#333333; background-color:#ffffff;\">border-radius:150px;</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'verdana,Arial,Helvetica,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;\">border-width:20px;</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'verdana,Arial,Helvetica,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;\">letter-spacing : 1pt; /*\345\255\227\351\227\264\350\267\235\347\246\273*/</span></p></body"
-                        "></html>", nullptr));
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", nullptr));
         groupBox_2->setTitle(QApplication::translate("MainWindow", "Label\346\225\210\346\236\234", nullptr));
         label->setText(QApplication::translate("MainWindow", "\350\212\261\347\213\227\345\210\266\344\275\234", nullptr));
-        groupBox_8->setTitle(QApplication::translate("MainWindow", "Button\346\225\210\346\236\234", nullptr));
+        groupBox_8->setTitle(QApplication::translate("MainWindow", "PushButton\346\225\210\346\236\234", nullptr));
         pushButton->setText(QApplication::translate("MainWindow", "\350\212\261\347\213\227\346\230\276\347\244\272", nullptr));
+        groupBox_9->setTitle(QApplication::translate("MainWindow", "LineEdit\346\225\210\346\236\234", nullptr));
+        lineEdit_13->setText(QApplication::translate("MainWindow", "\350\212\261\347\213\227\346\230\276\347\244\272", nullptr));
+        groupBox_10->setTitle(QApplication::translate("MainWindow", "ComboBox\346\225\210\346\236\234", nullptr));
+        comboBox_6->setItemText(0, QApplication::translate("MainWindow", "\350\212\261\347\213\227\346\274\224\347\244\272", nullptr));
+        comboBox_6->setItemText(1, QApplication::translate("MainWindow", "\346\274\224\347\244\2721", nullptr));
+        comboBox_6->setItemText(2, QApplication::translate("MainWindow", "\346\274\224\347\244\2722", nullptr));
+
+        groupBox_11->setTitle(QApplication::translate("MainWindow", "SpinBox\346\225\210\346\236\234", nullptr));
+        groupBox_12->setTitle(QApplication::translate("MainWindow", "CheckBox\346\225\210\346\236\234", nullptr));
+        checkBox->setText(QApplication::translate("MainWindow", "CheckBox", nullptr));
+        groupBox_13->setTitle(QApplication::translate("MainWindow", "RadioButton\346\225\210\346\236\234", nullptr));
+        radioButton->setText(QApplication::translate("MainWindow", "RadioButton", nullptr));
+        groupBox_14->setTitle(QApplication::translate("MainWindow", "DialogButtonBox\346\225\210\346\236\234", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "\345\237\272\347\241\200\347\273\204\344\273\266", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "123", nullptr));
+        groupBox_17->setTitle(QApplication::translate("MainWindow", "ScrollBar\346\225\210\346\236\234", nullptr));
+        groupBox_18->setTitle(QApplication::translate("MainWindow", "Slider\346\225\210\346\236\234", nullptr));
+        groupBox_19->setTitle(QApplication::translate("MainWindow", "Progressbar\346\225\210\346\236\234", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindow", "\350\277\233\345\272\246\346\235\241\347\273\204\344\273\266", nullptr));
+        groupBox_15->setTitle(QApplication::translate("MainWindow", "TabWidget\346\225\210\346\236\234", nullptr));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_3), QApplication::translate("MainWindow", "Tab 1", nullptr));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_4), QApplication::translate("MainWindow", "Tab 2", nullptr));
+        groupBox_16->setTitle(QApplication::translate("MainWindow", "TableWidget\346\225\210\346\236\234", nullptr));
+        QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
+        ___qtablewidgetitem->setText(QApplication::translate("MainWindow", "\345\247\223\345\220\215", nullptr));
+        QTableWidgetItem *___qtablewidgetitem1 = tableWidget->horizontalHeaderItem(1);
+        ___qtablewidgetitem1->setText(QApplication::translate("MainWindow", "\346\200\247\345\210\253", nullptr));
+        QTableWidgetItem *___qtablewidgetitem2 = tableWidget->horizontalHeaderItem(2);
+        ___qtablewidgetitem2->setText(QApplication::translate("MainWindow", "\347\261\215\350\264\257", nullptr));
+        QTableWidgetItem *___qtablewidgetitem3 = tableWidget->horizontalHeaderItem(3);
+        ___qtablewidgetitem3->setText(QApplication::translate("MainWindow", "\347\216\260\344\275\217\345\235\200", nullptr));
+        QTableWidgetItem *___qtablewidgetitem4 = tableWidget->verticalHeaderItem(0);
+        ___qtablewidgetitem4->setText(QApplication::translate("MainWindow", "\346\226\260\345\273\272\350\241\214", nullptr));
+        QTableWidgetItem *___qtablewidgetitem5 = tableWidget->verticalHeaderItem(1);
+        ___qtablewidgetitem5->setText(QApplication::translate("MainWindow", "\346\226\260\345\273\272\350\241\214", nullptr));
+        QTableWidgetItem *___qtablewidgetitem6 = tableWidget->verticalHeaderItem(2);
+        ___qtablewidgetitem6->setText(QApplication::translate("MainWindow", "\346\226\260\345\273\272\350\241\214", nullptr));
+        QTableWidgetItem *___qtablewidgetitem7 = tableWidget->verticalHeaderItem(3);
+        ___qtablewidgetitem7->setText(QApplication::translate("MainWindow", "\346\226\260\345\273\272\350\241\214", nullptr));
+        QTableWidgetItem *___qtablewidgetitem8 = tableWidget->verticalHeaderItem(4);
+        ___qtablewidgetitem8->setText(QApplication::translate("MainWindow", "\346\226\260\345\273\272\350\241\214", nullptr));
+        QTableWidgetItem *___qtablewidgetitem9 = tableWidget->verticalHeaderItem(5);
+        ___qtablewidgetitem9->setText(QApplication::translate("MainWindow", "\346\226\260\345\273\272\350\241\214", nullptr));
+        QTableWidgetItem *___qtablewidgetitem10 = tableWidget->verticalHeaderItem(6);
+        ___qtablewidgetitem10->setText(QApplication::translate("MainWindow", "\346\226\260\345\273\272\350\241\214", nullptr));
+        QTableWidgetItem *___qtablewidgetitem11 = tableWidget->verticalHeaderItem(7);
+        ___qtablewidgetitem11->setText(QApplication::translate("MainWindow", "\346\226\260\345\273\272\350\241\214", nullptr));
+        QTableWidgetItem *___qtablewidgetitem12 = tableWidget->verticalHeaderItem(8);
+        ___qtablewidgetitem12->setText(QApplication::translate("MainWindow", "\346\226\260\345\273\272\350\241\214", nullptr));
+        QTableWidgetItem *___qtablewidgetitem13 = tableWidget->verticalHeaderItem(9);
+        ___qtablewidgetitem13->setText(QApplication::translate("MainWindow", "\346\226\260\345\273\272\350\241\214", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "\345\244\215\346\235\202\347\273\204\344\273\266", nullptr));
     } // retranslateUi
 
 };
