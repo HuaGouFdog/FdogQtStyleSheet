@@ -57,6 +57,33 @@ private slots:
 
     void on_fontComboBox_currentFontChanged(const QFont &f);
 
+    void on_horizontalSlider_14_valueChanged(int value);
+
+    void on_horizontalSlider_15_valueChanged(int value);
+
+    void on_horizontalSlider_16_valueChanged(int value);
+
+    void on_horizontalSlider_17_valueChanged(int value);
+
+    void on_horizontalSlider_18_valueChanged(int value);
+
+    void on_horizontalSlider_19_valueChanged(int value);
+
+    void on_horizontalSlider_20_valueChanged(int value);
+
+    void on_horizontalSlider_21_valueChanged(int value);
+
+    void on_spinBox_6_valueChanged(int arg1);
+    void on_spinBox_7_valueChanged(int arg1);
+    void on_spinBox_8_valueChanged(int arg1);
+    void on_spinBox_9_valueChanged(int arg1);
+    void on_spinBox_10_valueChanged(int arg1);
+    void on_spinBox_11_valueChanged(int arg1);
+
+    void on_spinBox_12_valueChanged(int arg1);
+
+    void on_spinBox_13_valueChanged(int arg1);
+
 private:
     Ui::MainWindow *ui;
 };

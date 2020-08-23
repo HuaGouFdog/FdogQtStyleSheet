@@ -529,6 +529,9 @@ debug\mainwindow.obj: mainwindow.cpp mainwindow.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtGui\qinputmethod.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QButtonGroup \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qbuttongroup.h \
+		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QCheckBox \
+		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qcheckbox.h \
+		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qabstractbutton.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QComboBox \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qcombobox.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qabstractitemdelegate.h \
@@ -543,6 +546,8 @@ debug\mainwindow.obj: mainwindow.cpp mainwindow.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qrubberband.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qframe.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtCore\qabstractitemmodel.h \
+		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QDialogButtonBox \
+		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qdialogbuttonbox.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QFontComboBox \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qfontcombobox.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtGui\qfontdatabase.h \
@@ -566,14 +571,26 @@ debug\mainwindow.obj: mainwindow.cpp mainwindow.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtGui\qtextformat.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtGui\qpen.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtGui\qtextoption.h \
+		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QProgressBar \
+		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qprogressbar.h \
+		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QPushButton \
+		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qpushbutton.h \
+		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QRadioButton \
+		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qradiobutton.h \
+		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QScrollArea \
+		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qscrollarea.h \
+		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QScrollBar \
+		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qscrollbar.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QSlider \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QSpinBox \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qspinbox.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QTabWidget \
+		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QTableWidget \
+		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qtablewidget.h \
+		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qtableview.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QTextEdit \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\qtextedit.h \
 		..\..\QT\5.10.0\msvc2015_64\include\QtGui\qtextdocument.h \
-		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QVBoxLayout \
 		..\..\QT\5.10.0\msvc2015_64\include\QtWidgets\QWidget \
 		..\..\QT\5.10.0\msvc2015_64\include\QtCore\QDebug
 

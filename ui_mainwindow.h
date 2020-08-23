@@ -26,13 +26,13 @@
 #include <QtWidgets/QProgressBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QRadioButton>
+#include <QtWidgets/QScrollArea>
 #include <QtWidgets/QScrollBar>
 #include <QtWidgets/QSlider>
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QTableWidget>
 #include <QtWidgets/QTextEdit>
-#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -106,8 +106,59 @@ public:
     QLabel *label_23;
     QComboBox *comboBox_5;
     QLabel *label_24;
+    QComboBox *comboBox_7;
+    QLabel *label_28;
+    QTabWidget *tabWidget_3;
+    QWidget *tab_6;
+    QScrollArea *scrollArea;
+    QWidget *scrollAreaWidgetContents;
+    QGroupBox *groupBox_20;
+    QLabel *label_29;
+    QLabel *label_30;
+    QSpinBox *spinBox_10;
+    QLabel *label_31;
+    QSpinBox *spinBox_11;
+    QSpinBox *spinBox_9;
+    QSpinBox *spinBox_12;
+    QLabel *label_40;
+    QSpinBox *spinBox_13;
+    QLabel *label_41;
+    QGroupBox *groupBox_21;
+    QGridLayout *gridLayout_5;
+    QLabel *label_35;
+    QLabel *label_34;
+    QLineEdit *lineEdit_17;
+    QLineEdit *lineEdit_16;
+    QLineEdit *lineEdit_15;
+    QLineEdit *lineEdit_14;
+    QLabel *label_32;
+    QLabel *label_33;
+    QSlider *horizontalSlider_14;
+    QSlider *horizontalSlider_15;
+    QSlider *horizontalSlider_16;
+    QSlider *horizontalSlider_17;
+    QGroupBox *groupBox_22;
+    QGridLayout *gridLayout_6;
+    QLabel *label_36;
+    QSlider *horizontalSlider_18;
+    QLineEdit *lineEdit_18;
+    QLabel *label_37;
+    QSlider *horizontalSlider_19;
+    QLineEdit *lineEdit_19;
+    QLabel *label_38;
+    QSlider *horizontalSlider_20;
+    QLineEdit *lineEdit_20;
+    QLabel *label_39;
+    QSlider *horizontalSlider_21;
+    QLineEdit *lineEdit_21;
     QGroupBox *groupBox_3;
-    QVBoxLayout *verticalLayout;
+    QSpinBox *spinBox_8;
+    QLabel *label_26;
+    QLabel *label_27;
+    QSpinBox *spinBox_6;
+    QLabel *label_25;
+    QSpinBox *spinBox_7;
+    QWidget *tab_7;
     QTextEdit *textEdit;
     QTabWidget *tabWidget;
     QWidget *tab;
@@ -130,9 +181,7 @@ public:
     QWidget *tab_5;
     QGroupBox *groupBox_17;
     QScrollBar *horizontalScrollBar;
-    QScrollBar *verticalScrollBar;
     QGroupBox *groupBox_18;
-    QSlider *verticalSlider;
     QSlider *horizontalSlider_13;
     QGroupBox *groupBox_19;
     QProgressBar *progressBar;
@@ -148,7 +197,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(985, 668);
+        MainWindow->resize(1007, 544);
         MainWindow->setMinimumSize(QSize(970, 500));
         QIcon icon;
         icon.addFile(QStringLiteral(":/lib/icon.jpg"), QSize(), QIcon::Normal, QIcon::Off);
@@ -157,7 +206,7 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         groupBox = new QGroupBox(centralWidget);
         groupBox->setObjectName(QStringLiteral("groupBox"));
-        groupBox->setGeometry(QRect(9, 9, 965, 301));
+        groupBox->setGeometry(QRect(9, 8, 991, 304));
         groupBox->setMinimumSize(QSize(0, 0));
         groupBox->setStyleSheet(QLatin1String("QSlider::groove:horizontal {\n"
 "    border: 1px solid #4A708B;\n"
@@ -297,6 +346,7 @@ public:
         horizontalSlider_8 = new QSlider(groupBox_6);
         horizontalSlider_8->setObjectName(QStringLiteral("horizontalSlider_8"));
         horizontalSlider_8->setMaximum(255);
+        horizontalSlider_8->setValue(255);
         horizontalSlider_8->setOrientation(Qt::Horizontal);
 
         gridLayout_3->addWidget(horizontalSlider_8, 3, 1, 1, 1);
@@ -336,6 +386,7 @@ public:
         horizontalSlider_4 = new QSlider(groupBox_4);
         horizontalSlider_4->setObjectName(QStringLiteral("horizontalSlider_4"));
         horizontalSlider_4->setMaximum(255);
+        horizontalSlider_4->setValue(255);
         horizontalSlider_4->setOrientation(Qt::Horizontal);
 
         gridLayout_2->addWidget(horizontalSlider_4, 3, 1, 1, 1);
@@ -467,6 +518,7 @@ public:
         horizontalSlider_12 = new QSlider(groupBox_7);
         horizontalSlider_12->setObjectName(QStringLiteral("horizontalSlider_12"));
         horizontalSlider_12->setMaximum(255);
+        horizontalSlider_12->setValue(255);
         horizontalSlider_12->setOrientation(Qt::Horizontal);
 
         gridLayout_4->addWidget(horizontalSlider_12, 3, 1, 1, 1);
@@ -492,6 +544,7 @@ public:
         spinBox = new QSpinBox(groupBox_5);
         spinBox->setObjectName(QStringLiteral("spinBox"));
         spinBox->setGeometry(QRect(70, 49, 100, 18));
+        spinBox->setValue(15);
         label_12 = new QLabel(groupBox_5);
         label_12->setObjectName(QStringLiteral("label_12"));
         label_12->setGeometry(QRect(10, 74, 16, 16));
@@ -501,6 +554,7 @@ public:
         spinBox_2 = new QSpinBox(groupBox_5);
         spinBox_2->setObjectName(QStringLiteral("spinBox_2"));
         spinBox_2->setGeometry(QRect(250, 75, 100, 18));
+        spinBox_2->setValue(1);
         label_18 = new QLabel(groupBox_5);
         label_18->setObjectName(QStringLiteral("label_18"));
         label_18->setGeometry(QRect(190, 74, 54, 16));
@@ -573,33 +627,289 @@ public:
         label_24 = new QLabel(groupBox_5);
         label_24->setObjectName(QStringLiteral("label_24"));
         label_24->setGeometry(QRect(190, 24, 54, 16));
-        groupBox_3 = new QGroupBox(groupBox);
+        comboBox_7 = new QComboBox(groupBox_5);
+        comboBox_7->addItem(QString());
+        comboBox_7->addItem(QString());
+        comboBox_7->setObjectName(QStringLiteral("comboBox_7"));
+        comboBox_7->setGeometry(QRect(430, 80, 100, 20));
+        label_28 = new QLabel(groupBox_5);
+        label_28->setObjectName(QStringLiteral("label_28"));
+        label_28->setGeometry(QRect(370, 80, 54, 16));
+        tabWidget_3 = new QTabWidget(groupBox);
+        tabWidget_3->setObjectName(QStringLiteral("tabWidget_3"));
+        tabWidget_3->setGeometry(QRect(570, 10, 416, 291));
+        tab_6 = new QWidget();
+        tab_6->setObjectName(QStringLiteral("tab_6"));
+        scrollArea = new QScrollArea(tab_6);
+        scrollArea->setObjectName(QStringLiteral("scrollArea"));
+        scrollArea->setGeometry(QRect(0, 0, 410, 271));
+        scrollArea->setWidgetResizable(false);
+        scrollAreaWidgetContents = new QWidget();
+        scrollAreaWidgetContents->setObjectName(QStringLiteral("scrollAreaWidgetContents"));
+        scrollAreaWidgetContents->setEnabled(true);
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 391, 500));
+        groupBox_20 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_20->setObjectName(QStringLiteral("groupBox_20"));
+        groupBox_20->setGeometry(QRect(10, 0, 371, 111));
+        label_29 = new QLabel(groupBox_20);
+        label_29->setObjectName(QStringLiteral("label_29"));
+        label_29->setGeometry(QRect(10, 50, 54, 16));
+        label_30 = new QLabel(groupBox_20);
+        label_30->setObjectName(QStringLiteral("label_30"));
+        label_30->setGeometry(QRect(190, 21, 54, 16));
+        spinBox_10 = new QSpinBox(groupBox_20);
+        spinBox_10->setObjectName(QStringLiteral("spinBox_10"));
+        spinBox_10->setGeometry(QRect(70, 51, 100, 18));
+        spinBox_10->setMinimum(-10);
+        spinBox_10->setValue(-3);
+        label_31 = new QLabel(groupBox_20);
+        label_31->setObjectName(QStringLiteral("label_31"));
+        label_31->setGeometry(QRect(10, 19, 54, 16));
+        spinBox_11 = new QSpinBox(groupBox_20);
+        spinBox_11->setObjectName(QStringLiteral("spinBox_11"));
+        spinBox_11->setGeometry(QRect(250, 22, 100, 18));
+        spinBox_11->setMinimum(-10);
+        spinBox_11->setValue(-3);
+        spinBox_9 = new QSpinBox(groupBox_20);
+        spinBox_9->setObjectName(QStringLiteral("spinBox_9"));
+        spinBox_9->setGeometry(QRect(70, 20, 100, 18));
+        spinBox_9->setValue(5);
+        spinBox_12 = new QSpinBox(groupBox_20);
+        spinBox_12->setObjectName(QStringLiteral("spinBox_12"));
+        spinBox_12->setGeometry(QRect(250, 51, 100, 18));
+        label_40 = new QLabel(groupBox_20);
+        label_40->setObjectName(QStringLiteral("label_40"));
+        label_40->setGeometry(QRect(190, 50, 54, 16));
+        spinBox_13 = new QSpinBox(groupBox_20);
+        spinBox_13->setObjectName(QStringLiteral("spinBox_13"));
+        spinBox_13->setGeometry(QRect(70, 80, 100, 18));
+        spinBox_13->setValue(1);
+        label_41 = new QLabel(groupBox_20);
+        label_41->setObjectName(QStringLiteral("label_41"));
+        label_41->setGeometry(QRect(10, 79, 54, 16));
+        groupBox_21 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_21->setObjectName(QStringLiteral("groupBox_21"));
+        groupBox_21->setGeometry(QRect(10, 210, 181, 121));
+        groupBox_21->setMaximumSize(QSize(300, 138));
+        gridLayout_5 = new QGridLayout(groupBox_21);
+        gridLayout_5->setSpacing(6);
+        gridLayout_5->setContentsMargins(11, 11, 11, 11);
+        gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
+        label_35 = new QLabel(groupBox_21);
+        label_35->setObjectName(QStringLiteral("label_35"));
+        label_35->setMinimumSize(QSize(15, 0));
+
+        gridLayout_5->addWidget(label_35, 0, 0, 1, 1);
+
+        label_34 = new QLabel(groupBox_21);
+        label_34->setObjectName(QStringLiteral("label_34"));
+        label_34->setMinimumSize(QSize(15, 0));
+
+        gridLayout_5->addWidget(label_34, 4, 0, 1, 1);
+
+        lineEdit_17 = new QLineEdit(groupBox_21);
+        lineEdit_17->setObjectName(QStringLiteral("lineEdit_17"));
+        lineEdit_17->setMaximumSize(QSize(40, 16777215));
+
+        gridLayout_5->addWidget(lineEdit_17, 4, 2, 1, 1);
+
+        lineEdit_16 = new QLineEdit(groupBox_21);
+        lineEdit_16->setObjectName(QStringLiteral("lineEdit_16"));
+        lineEdit_16->setMaximumSize(QSize(40, 16777215));
+
+        gridLayout_5->addWidget(lineEdit_16, 3, 2, 1, 1);
+
+        lineEdit_15 = new QLineEdit(groupBox_21);
+        lineEdit_15->setObjectName(QStringLiteral("lineEdit_15"));
+        lineEdit_15->setMaximumSize(QSize(40, 16777215));
+
+        gridLayout_5->addWidget(lineEdit_15, 2, 2, 1, 1);
+
+        lineEdit_14 = new QLineEdit(groupBox_21);
+        lineEdit_14->setObjectName(QStringLiteral("lineEdit_14"));
+        lineEdit_14->setMaximumSize(QSize(40, 16777215));
+
+        gridLayout_5->addWidget(lineEdit_14, 0, 2, 1, 1);
+
+        label_32 = new QLabel(groupBox_21);
+        label_32->setObjectName(QStringLiteral("label_32"));
+        label_32->setMinimumSize(QSize(15, 0));
+
+        gridLayout_5->addWidget(label_32, 2, 0, 1, 1);
+
+        label_33 = new QLabel(groupBox_21);
+        label_33->setObjectName(QStringLiteral("label_33"));
+        label_33->setMinimumSize(QSize(15, 0));
+
+        gridLayout_5->addWidget(label_33, 3, 0, 1, 1);
+
+        horizontalSlider_14 = new QSlider(groupBox_21);
+        horizontalSlider_14->setObjectName(QStringLiteral("horizontalSlider_14"));
+        horizontalSlider_14->setMaximum(255);
+        horizontalSlider_14->setOrientation(Qt::Horizontal);
+
+        gridLayout_5->addWidget(horizontalSlider_14, 0, 1, 1, 1);
+
+        horizontalSlider_15 = new QSlider(groupBox_21);
+        horizontalSlider_15->setObjectName(QStringLiteral("horizontalSlider_15"));
+        horizontalSlider_15->setMinimumSize(QSize(0, 0));
+        horizontalSlider_15->setMaximum(255);
+        horizontalSlider_15->setOrientation(Qt::Horizontal);
+
+        gridLayout_5->addWidget(horizontalSlider_15, 2, 1, 1, 1);
+
+        horizontalSlider_16 = new QSlider(groupBox_21);
+        horizontalSlider_16->setObjectName(QStringLiteral("horizontalSlider_16"));
+        horizontalSlider_16->setMaximum(255);
+        horizontalSlider_16->setOrientation(Qt::Horizontal);
+
+        gridLayout_5->addWidget(horizontalSlider_16, 3, 1, 1, 1);
+
+        horizontalSlider_17 = new QSlider(groupBox_21);
+        horizontalSlider_17->setObjectName(QStringLiteral("horizontalSlider_17"));
+        horizontalSlider_17->setMaximum(255);
+        horizontalSlider_17->setValue(255);
+        horizontalSlider_17->setOrientation(Qt::Horizontal);
+
+        gridLayout_5->addWidget(horizontalSlider_17, 4, 1, 1, 1);
+
+        groupBox_22 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_22->setObjectName(QStringLiteral("groupBox_22"));
+        groupBox_22->setGeometry(QRect(200, 210, 181, 121));
+        groupBox_22->setMaximumSize(QSize(300, 138));
+        gridLayout_6 = new QGridLayout(groupBox_22);
+        gridLayout_6->setSpacing(6);
+        gridLayout_6->setContentsMargins(11, 11, 11, 11);
+        gridLayout_6->setObjectName(QStringLiteral("gridLayout_6"));
+        label_36 = new QLabel(groupBox_22);
+        label_36->setObjectName(QStringLiteral("label_36"));
+        label_36->setMinimumSize(QSize(15, 0));
+
+        gridLayout_6->addWidget(label_36, 0, 0, 1, 1);
+
+        horizontalSlider_18 = new QSlider(groupBox_22);
+        horizontalSlider_18->setObjectName(QStringLiteral("horizontalSlider_18"));
+        horizontalSlider_18->setMinimumSize(QSize(0, 0));
+        horizontalSlider_18->setMaximum(255);
+        horizontalSlider_18->setOrientation(Qt::Horizontal);
+
+        gridLayout_6->addWidget(horizontalSlider_18, 0, 1, 1, 1);
+
+        lineEdit_18 = new QLineEdit(groupBox_22);
+        lineEdit_18->setObjectName(QStringLiteral("lineEdit_18"));
+        lineEdit_18->setMaximumSize(QSize(40, 16777215));
+
+        gridLayout_6->addWidget(lineEdit_18, 0, 2, 1, 1);
+
+        label_37 = new QLabel(groupBox_22);
+        label_37->setObjectName(QStringLiteral("label_37"));
+        label_37->setMinimumSize(QSize(15, 0));
+
+        gridLayout_6->addWidget(label_37, 1, 0, 1, 1);
+
+        horizontalSlider_19 = new QSlider(groupBox_22);
+        horizontalSlider_19->setObjectName(QStringLiteral("horizontalSlider_19"));
+        horizontalSlider_19->setMaximum(255);
+        horizontalSlider_19->setOrientation(Qt::Horizontal);
+
+        gridLayout_6->addWidget(horizontalSlider_19, 1, 1, 1, 1);
+
+        lineEdit_19 = new QLineEdit(groupBox_22);
+        lineEdit_19->setObjectName(QStringLiteral("lineEdit_19"));
+        lineEdit_19->setMaximumSize(QSize(40, 16777215));
+
+        gridLayout_6->addWidget(lineEdit_19, 1, 2, 1, 1);
+
+        label_38 = new QLabel(groupBox_22);
+        label_38->setObjectName(QStringLiteral("label_38"));
+        label_38->setMinimumSize(QSize(15, 0));
+
+        gridLayout_6->addWidget(label_38, 2, 0, 1, 1);
+
+        horizontalSlider_20 = new QSlider(groupBox_22);
+        horizontalSlider_20->setObjectName(QStringLiteral("horizontalSlider_20"));
+        horizontalSlider_20->setMaximum(255);
+        horizontalSlider_20->setOrientation(Qt::Horizontal);
+
+        gridLayout_6->addWidget(horizontalSlider_20, 2, 1, 1, 1);
+
+        lineEdit_20 = new QLineEdit(groupBox_22);
+        lineEdit_20->setObjectName(QStringLiteral("lineEdit_20"));
+        lineEdit_20->setMaximumSize(QSize(40, 16777215));
+
+        gridLayout_6->addWidget(lineEdit_20, 2, 2, 1, 1);
+
+        label_39 = new QLabel(groupBox_22);
+        label_39->setObjectName(QStringLiteral("label_39"));
+        label_39->setMinimumSize(QSize(15, 0));
+
+        gridLayout_6->addWidget(label_39, 3, 0, 1, 1);
+
+        horizontalSlider_21 = new QSlider(groupBox_22);
+        horizontalSlider_21->setObjectName(QStringLiteral("horizontalSlider_21"));
+        horizontalSlider_21->setMaximum(255);
+        horizontalSlider_21->setValue(255);
+        horizontalSlider_21->setOrientation(Qt::Horizontal);
+
+        gridLayout_6->addWidget(horizontalSlider_21, 3, 1, 1, 1);
+
+        lineEdit_21 = new QLineEdit(groupBox_22);
+        lineEdit_21->setObjectName(QStringLiteral("lineEdit_21"));
+        lineEdit_21->setMaximumSize(QSize(40, 16777215));
+
+        gridLayout_6->addWidget(lineEdit_21, 3, 2, 1, 1);
+
+        groupBox_3 = new QGroupBox(scrollAreaWidgetContents);
         groupBox_3->setObjectName(QStringLiteral("groupBox_3"));
-        groupBox_3->setGeometry(QRect(564, 10, 391, 281));
-        groupBox_3->setMinimumSize(QSize(0, 0));
-        groupBox_3->setMaximumSize(QSize(16777215, 16777215));
-        verticalLayout = new QVBoxLayout(groupBox_3);
-        verticalLayout->setSpacing(6);
-        verticalLayout->setContentsMargins(11, 11, 11, 11);
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        textEdit = new QTextEdit(groupBox_3);
+        groupBox_3->setGeometry(QRect(10, 120, 371, 81));
+        spinBox_8 = new QSpinBox(groupBox_3);
+        spinBox_8->setObjectName(QStringLiteral("spinBox_8"));
+        spinBox_8->setGeometry(QRect(70, 52, 100, 18));
+        spinBox_8->setMinimum(-10);
+        spinBox_8->setValue(3);
+        label_26 = new QLabel(groupBox_3);
+        label_26->setObjectName(QStringLiteral("label_26"));
+        label_26->setGeometry(QRect(10, 20, 54, 16));
+        label_27 = new QLabel(groupBox_3);
+        label_27->setObjectName(QStringLiteral("label_27"));
+        label_27->setGeometry(QRect(10, 51, 54, 16));
+        spinBox_6 = new QSpinBox(groupBox_3);
+        spinBox_6->setObjectName(QStringLiteral("spinBox_6"));
+        spinBox_6->setGeometry(QRect(250, 20, 100, 18));
+        spinBox_6->setValue(5);
+        label_25 = new QLabel(groupBox_3);
+        label_25->setObjectName(QStringLiteral("label_25"));
+        label_25->setGeometry(QRect(190, 19, 54, 16));
+        spinBox_7 = new QSpinBox(groupBox_3);
+        spinBox_7->setObjectName(QStringLiteral("spinBox_7"));
+        spinBox_7->setGeometry(QRect(70, 21, 100, 18));
+        spinBox_7->setMinimum(-10);
+        spinBox_7->setValue(3);
+        scrollArea->setWidget(scrollAreaWidgetContents);
+        tabWidget_3->addTab(tab_6, QString());
+        tab_7 = new QWidget();
+        tab_7->setObjectName(QStringLiteral("tab_7"));
+        textEdit = new QTextEdit(tab_7);
         textEdit->setObjectName(QStringLiteral("textEdit"));
+        textEdit->setGeometry(QRect(0, 0, 385, 266));
         QFont font;
         font.setPointSize(9);
         textEdit->setFont(font);
         textEdit->setStyleSheet(QStringLiteral(""));
-
-        verticalLayout->addWidget(textEdit);
-
+        tabWidget_3->addTab(tab_7, QString());
         tabWidget = new QTabWidget(centralWidget);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
-        tabWidget->setGeometry(QRect(10, 310, 967, 351));
+        tabWidget->setGeometry(QRect(10, 310, 991, 351));
         tabWidget->setMinimumSize(QSize(0, 0));
         tab = new QWidget();
         tab->setObjectName(QStringLiteral("tab"));
         groupBox_2 = new QGroupBox(tab);
         groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
         groupBox_2->setGeometry(QRect(10, 20, 221, 81));
+        groupBox_2->setStyleSheet(QLatin1String("#groupBox_2\n"
+"{\n"
+"background-color: rgb(197, 197, 197);\n"
+"}"));
         label = new QLabel(groupBox_2);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(40, 30, 140, 30));
@@ -608,12 +918,20 @@ public:
         groupBox_8 = new QGroupBox(tab);
         groupBox_8->setObjectName(QStringLiteral("groupBox_8"));
         groupBox_8->setGeometry(QRect(250, 20, 221, 81));
+        groupBox_8->setStyleSheet(QLatin1String("#groupBox_8\n"
+"{\n"
+"background-color: rgb(197, 197, 197);\n"
+"}"));
         pushButton = new QPushButton(groupBox_8);
         pushButton->setObjectName(QStringLiteral("pushButton"));
         pushButton->setGeometry(QRect(40, 30, 140, 30));
         groupBox_9 = new QGroupBox(tab);
         groupBox_9->setObjectName(QStringLiteral("groupBox_9"));
         groupBox_9->setGeometry(QRect(490, 20, 221, 81));
+        groupBox_9->setStyleSheet(QLatin1String("#groupBox_9\n"
+"{\n"
+"background-color: rgb(197, 197, 197);\n"
+"}"));
         lineEdit_13 = new QLineEdit(groupBox_9);
         lineEdit_13->setObjectName(QStringLiteral("lineEdit_13"));
         lineEdit_13->setGeometry(QRect(40, 30, 140, 30));
@@ -623,6 +941,10 @@ public:
         groupBox_10 = new QGroupBox(tab);
         groupBox_10->setObjectName(QStringLiteral("groupBox_10"));
         groupBox_10->setGeometry(QRect(250, 120, 221, 81));
+        groupBox_10->setStyleSheet(QLatin1String("#groupBox_10\n"
+"{\n"
+"background-color: rgb(197, 197, 197);\n"
+"}"));
         comboBox_6 = new QComboBox(groupBox_10);
         comboBox_6->addItem(QString());
         comboBox_6->addItem(QString());
@@ -632,24 +954,40 @@ public:
         groupBox_11 = new QGroupBox(tab);
         groupBox_11->setObjectName(QStringLiteral("groupBox_11"));
         groupBox_11->setGeometry(QRect(490, 120, 221, 81));
+        groupBox_11->setStyleSheet(QLatin1String("#groupBox_11\n"
+"{\n"
+"background-color: rgb(197, 197, 197);\n"
+"}"));
         spinBox_5 = new QSpinBox(groupBox_11);
         spinBox_5->setObjectName(QStringLiteral("spinBox_5"));
         spinBox_5->setGeometry(QRect(40, 30, 140, 30));
         groupBox_12 = new QGroupBox(tab);
         groupBox_12->setObjectName(QStringLiteral("groupBox_12"));
         groupBox_12->setGeometry(QRect(730, 20, 221, 81));
+        groupBox_12->setStyleSheet(QLatin1String("#groupBox_12\n"
+"{\n"
+"background-color: rgb(197, 197, 197);\n"
+"}"));
         checkBox = new QCheckBox(groupBox_12);
         checkBox->setObjectName(QStringLiteral("checkBox"));
         checkBox->setGeometry(QRect(50, 30, 140, 30));
         groupBox_13 = new QGroupBox(tab);
         groupBox_13->setObjectName(QStringLiteral("groupBox_13"));
         groupBox_13->setGeometry(QRect(730, 120, 221, 81));
+        groupBox_13->setStyleSheet(QLatin1String("#groupBox_13\n"
+"{\n"
+"background-color: rgb(197, 197, 197);\n"
+"}"));
         radioButton = new QRadioButton(groupBox_13);
         radioButton->setObjectName(QStringLiteral("radioButton"));
         radioButton->setGeometry(QRect(40, 30, 140, 30));
         groupBox_14 = new QGroupBox(tab);
         groupBox_14->setObjectName(QStringLiteral("groupBox_14"));
         groupBox_14->setGeometry(QRect(10, 120, 221, 81));
+        groupBox_14->setStyleSheet(QLatin1String("#groupBox_14\n"
+"{\n"
+"background-color: rgb(197, 197, 197);\n"
+"}"));
         buttonBox = new QDialogButtonBox(groupBox_14);
         buttonBox->setObjectName(QStringLiteral("buttonBox"));
         buttonBox->setGeometry(QRect(0, 30, 140, 30));
@@ -659,32 +997,37 @@ public:
         tab_5->setObjectName(QStringLiteral("tab_5"));
         groupBox_17 = new QGroupBox(tab_5);
         groupBox_17->setObjectName(QStringLiteral("groupBox_17"));
-        groupBox_17->setGeometry(QRect(9, 10, 211, 311));
+        groupBox_17->setGeometry(QRect(9, 10, 211, 111));
+        groupBox_17->setStyleSheet(QLatin1String("#groupBox_17\n"
+"{\n"
+"background-color: rgb(197, 197, 197);\n"
+"}"));
         horizontalScrollBar = new QScrollBar(groupBox_17);
         horizontalScrollBar->setObjectName(QStringLiteral("horizontalScrollBar"));
-        horizontalScrollBar->setGeometry(QRect(20, 240, 160, 16));
+        horizontalScrollBar->setGeometry(QRect(20, 50, 160, 16));
         horizontalScrollBar->setOrientation(Qt::Horizontal);
-        verticalScrollBar = new QScrollBar(groupBox_17);
-        verticalScrollBar->setObjectName(QStringLiteral("verticalScrollBar"));
-        verticalScrollBar->setGeometry(QRect(90, 30, 16, 160));
-        verticalScrollBar->setOrientation(Qt::Vertical);
         groupBox_18 = new QGroupBox(tab_5);
         groupBox_18->setObjectName(QStringLiteral("groupBox_18"));
-        groupBox_18->setGeometry(QRect(230, 10, 211, 311));
-        verticalSlider = new QSlider(groupBox_18);
-        verticalSlider->setObjectName(QStringLiteral("verticalSlider"));
-        verticalSlider->setGeometry(QRect(90, 30, 22, 160));
-        verticalSlider->setOrientation(Qt::Vertical);
+        groupBox_18->setGeometry(QRect(240, 10, 211, 111));
+        groupBox_18->setStyleSheet(QLatin1String("#groupBox_18\n"
+"{\n"
+"background-color: rgb(197, 197, 197);\n"
+"}"));
         horizontalSlider_13 = new QSlider(groupBox_18);
         horizontalSlider_13->setObjectName(QStringLiteral("horizontalSlider_13"));
-        horizontalSlider_13->setGeometry(QRect(30, 260, 160, 22));
+        horizontalSlider_13->setGeometry(QRect(20, 50, 161, 21));
+        horizontalSlider_13->setStyleSheet(QString::fromUtf8("\343\200\201"));
         horizontalSlider_13->setOrientation(Qt::Horizontal);
         groupBox_19 = new QGroupBox(tab_5);
         groupBox_19->setObjectName(QStringLiteral("groupBox_19"));
-        groupBox_19->setGeometry(QRect(450, 10, 491, 311));
+        groupBox_19->setGeometry(QRect(470, 10, 211, 111));
+        groupBox_19->setStyleSheet(QLatin1String("#groupBox_19\n"
+"{\n"
+"background-color: rgb(197, 197, 197);\n"
+"}"));
         progressBar = new QProgressBar(groupBox_19);
         progressBar->setObjectName(QStringLiteral("progressBar"));
-        progressBar->setGeometry(QRect(20, 30, 451, 23));
+        progressBar->setGeometry(QRect(30, 50, 161, 23));
         progressBar->setValue(24);
         tabWidget->addTab(tab_5, QString());
         tab_2 = new QWidget();
@@ -746,6 +1089,7 @@ public:
 
         retranslateUi(MainWindow);
 
+        tabWidget_3->setCurrentIndex(0);
         tabWidget->setCurrentIndex(1);
 
 
@@ -764,7 +1108,7 @@ public:
         label_9->setText(QApplication::translate("MainWindow", "B:", nullptr));
         lineEdit_7->setText(QApplication::translate("MainWindow", "0", nullptr));
         label_10->setText(QApplication::translate("MainWindow", "A:", nullptr));
-        lineEdit_8->setText(QApplication::translate("MainWindow", "0", nullptr));
+        lineEdit_8->setText(QApplication::translate("MainWindow", "255", nullptr));
         groupBox_4->setTitle(QApplication::translate("MainWindow", "\350\203\214\346\231\257\351\242\234\350\211\262", nullptr));
         lineEdit->setText(QApplication::translate("MainWindow", "0", nullptr));
         lineEdit_2->setText(QApplication::translate("MainWindow", "0", nullptr));
@@ -773,7 +1117,7 @@ public:
         label_4->setText(QApplication::translate("MainWindow", "B:", nullptr));
         label_5->setText(QApplication::translate("MainWindow", "A:", nullptr));
         label_2->setText(QApplication::translate("MainWindow", "R:", nullptr));
-        lineEdit_4->setText(QApplication::translate("MainWindow", "0", nullptr));
+        lineEdit_4->setText(QApplication::translate("MainWindow", "255", nullptr));
         groupBox_7->setTitle(QApplication::translate("MainWindow", "\345\255\227\344\275\223\351\242\234\350\211\262", nullptr));
         label_14->setText(QApplication::translate("MainWindow", "R:", nullptr));
         lineEdit_9->setText(QApplication::translate("MainWindow", "0", nullptr));
@@ -782,7 +1126,7 @@ public:
         label_16->setText(QApplication::translate("MainWindow", "B:", nullptr));
         lineEdit_11->setText(QApplication::translate("MainWindow", "0", nullptr));
         label_17->setText(QApplication::translate("MainWindow", "A:", nullptr));
-        lineEdit_12->setText(QApplication::translate("MainWindow", "0", nullptr));
+        lineEdit_12->setText(QApplication::translate("MainWindow", "255", nullptr));
         groupBox_5->setTitle(QApplication::translate("MainWindow", "\345\205\266\344\273\226", nullptr));
         label_6->setText(QApplication::translate("MainWindow", "\346\226\207\345\255\227\345\255\227\344\275\223:", nullptr));
         label_11->setText(QApplication::translate("MainWindow", "\346\226\207\345\255\227\345\244\247\345\260\217:", nullptr));
@@ -830,12 +1174,45 @@ public:
         comboBox_5->setItemText(4, QApplication::translate("MainWindow", "blink", nullptr));
 
         label_24->setText(QApplication::translate("MainWindow", "\346\226\207\345\255\227\351\227\264\350\267\235:", nullptr));
-        groupBox_3->setTitle(QApplication::translate("MainWindow", "QSS\344\273\243\347\240\201", nullptr));
+        comboBox_7->setItemText(0, QApplication::translate("MainWindow", "\345\237\272\347\241\200\347\273\204\344\273\266", nullptr));
+        comboBox_7->setItemText(1, QApplication::translate("MainWindow", "\350\277\233\345\272\246\346\235\241", nullptr));
+
+        label_28->setText(QApplication::translate("MainWindow", "\351\242\234\350\211\262\350\214\203\345\233\264:", nullptr));
+        groupBox_20->setTitle(QApplication::translate("MainWindow", "\346\214\211\351\222\256", nullptr));
+        label_29->setText(QApplication::translate("MainWindow", "\344\270\212\351\253\230:", nullptr));
+        label_30->setText(QApplication::translate("MainWindow", "\344\270\213\351\253\230:", nullptr));
+        label_31->setText(QApplication::translate("MainWindow", "\345\256\275\345\272\246\345\244\247\345\260\217:", nullptr));
+        label_40->setText(QApplication::translate("MainWindow", "\345\234\206\350\247\222\345\244\247\345\260\217:", nullptr));
+        label_41->setText(QApplication::translate("MainWindow", "\350\276\271\346\241\206\345\244\247\345\260\217:", nullptr));
+        groupBox_21->setTitle(QApplication::translate("MainWindow", "\346\214\211\351\222\256\350\203\214\346\231\257\351\242\234\350\211\262", nullptr));
+        label_35->setText(QApplication::translate("MainWindow", "R:", nullptr));
+        label_34->setText(QApplication::translate("MainWindow", "A:", nullptr));
+        lineEdit_17->setText(QApplication::translate("MainWindow", "255", nullptr));
+        lineEdit_16->setText(QApplication::translate("MainWindow", "0", nullptr));
+        lineEdit_15->setText(QApplication::translate("MainWindow", "0", nullptr));
+        lineEdit_14->setText(QApplication::translate("MainWindow", "0", nullptr));
+        label_32->setText(QApplication::translate("MainWindow", "G:", nullptr));
+        label_33->setText(QApplication::translate("MainWindow", "B:", nullptr));
+        groupBox_22->setTitle(QApplication::translate("MainWindow", "\346\214\211\351\222\256\350\276\271\346\241\206\351\242\234\350\211\262", nullptr));
+        label_36->setText(QApplication::translate("MainWindow", "R:", nullptr));
+        lineEdit_18->setText(QApplication::translate("MainWindow", "0", nullptr));
+        label_37->setText(QApplication::translate("MainWindow", "G:", nullptr));
+        lineEdit_19->setText(QApplication::translate("MainWindow", "0", nullptr));
+        label_38->setText(QApplication::translate("MainWindow", "B:", nullptr));
+        lineEdit_20->setText(QApplication::translate("MainWindow", "0", nullptr));
+        label_39->setText(QApplication::translate("MainWindow", "A:", nullptr));
+        lineEdit_21->setText(QApplication::translate("MainWindow", "255", nullptr));
+        groupBox_3->setTitle(QApplication::translate("MainWindow", "\350\277\233\345\272\246\346\241\206", nullptr));
+        label_26->setText(QApplication::translate("MainWindow", "left:", nullptr));
+        label_27->setText(QApplication::translate("MainWindow", "right:", nullptr));
+        label_25->setText(QApplication::translate("MainWindow", "\345\256\275\345\272\246\345\244\247\345\260\217:", nullptr));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QApplication::translate("MainWindow", "\350\277\233\345\272\246\346\235\241\347\233\270\345\205\263", nullptr));
         textEdit->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", nullptr));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "QSS\344\273\243\347\240\201", nullptr));
         groupBox_2->setTitle(QApplication::translate("MainWindow", "Label\346\225\210\346\236\234", nullptr));
         label->setText(QApplication::translate("MainWindow", "\350\212\261\347\213\227\345\210\266\344\275\234", nullptr));
         groupBox_8->setTitle(QApplication::translate("MainWindow", "PushButton\346\225\210\346\236\234", nullptr));
