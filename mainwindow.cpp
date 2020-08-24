@@ -55,6 +55,13 @@ void MainWindow::Labelshow()
     QString str_13 = QString("border-radius:%1px;").arg(ui->spinBox_12->value());
     //按钮边框宽度
     QString str_14 = QString("border-width:%1px;").arg(ui->spinBox_13->value());
+    //进度条划过
+    QString str_15 = QString("background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(%1, %2, %3, %4), stop:1 rgba(%5, %6, %7, %8));")
+            .arg(ui->horizontalSlider_22->value())
+            .arg(ui->horizontalSlider_23->value()).arg(ui->horizontalSlider_24->value()).arg(ui->horizontalSlider_25->value())
+            .arg(ui->horizontalSlider_26->value()).arg(ui->horizontalSlider_27->value()).arg(ui->horizontalSlider_28->value())
+            .arg(ui->horizontalSlider_29->value());
+    QString str_16 = QString("width:%1").arg(ui->spinBox_14->value());
     int control = ui->comboBox_7->currentIndex();
     QString s;
     switch (control)
@@ -72,11 +79,16 @@ void MainWindow::Labelshow()
             ui->textEdit->setText(s);
         break;
     case 1:
-         s = "QSlider::groove:horizontal{"+str_1+str_2+str_4+str_5+str_6+str_8+str_9+"}"+"QSlider::handle:horizontal{"+str_11+str_12+str_4+str_14+str_10+str_13+"}";
+         s = "QSlider::groove:horizontal{"+str_1+str_2+str_4+str_5+str_6+str_8+str_9+"}"+"QSlider::handle:horizontal{"+str_11+str_12+str_4+str_14+str_10+str_13+"}"+"QSlider::sub-page:horizontal {"+str_15+"}";
          qDebug()<<s;
          ui->horizontalSlider_13->setStyleSheet(s);
+         ui->textEdit->setText(s);
          break;
     case 2:
+        s = "QScrollBar:vertical{"+str_1+str_2+str_16+"}"+"QScrollBar::handle:vertical{"+str_4+str_13+str_11+str_12+"}";
+         ui->verticalScrollBar->setStyleSheet(s);
+         qDebug()<<s;
+         ui->textEdit->setText(s);
         break;
     case 3:
         break;
@@ -294,6 +306,44 @@ void MainWindow::on_spinBox_12_valueChanged(int arg1)
 }
 
 void MainWindow::on_spinBox_13_valueChanged(int arg1)
+{
+    Labelshow();
+}
+
+void MainWindow::on_horizontalSlider_22_valueChanged(int value)
+{
+    Labelshow();
+}
+void MainWindow::on_horizontalSlider_23_valueChanged(int value)
+{
+    Labelshow();
+}
+void MainWindow::on_horizontalSlider_24_valueChanged(int value)
+{
+    Labelshow();
+}
+void MainWindow::on_horizontalSlider_25_valueChanged(int value)
+{
+    Labelshow();
+}
+void MainWindow::on_horizontalSlider_26_valueChanged(int value)
+{
+    Labelshow();
+}
+void MainWindow::on_horizontalSlider_27_valueChanged(int value)
+{
+    Labelshow();
+}
+void MainWindow::on_horizontalSlider_28_valueChanged(int value)
+{
+    Labelshow();
+}
+void MainWindow::on_horizontalSlider_29_valueChanged(int value)
+{
+    Labelshow();
+}
+
+void MainWindow::on_spinBox_14_valueChanged(int arg1)
 {
     Labelshow();
 }

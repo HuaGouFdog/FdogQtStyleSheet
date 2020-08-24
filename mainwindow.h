@@ -84,6 +84,16 @@ private slots:
 
     void on_spinBox_13_valueChanged(int arg1);
 
+    void on_horizontalSlider_22_valueChanged(int value);
+    void on_horizontalSlider_23_valueChanged(int value);
+    void on_horizontalSlider_24_valueChanged(int value);
+    void on_horizontalSlider_25_valueChanged(int value);
+    void on_horizontalSlider_26_valueChanged(int value);
+    void on_horizontalSlider_27_valueChanged(int value);
+    void on_horizontalSlider_28_valueChanged(int value);
+    void on_horizontalSlider_29_valueChanged(int value);
+    void on_spinBox_14_valueChanged(int arg1);
+
 private:
     Ui::MainWindow *ui;
 };
