@@ -61,7 +61,13 @@ void MainWindow::Labelshow()
             .arg(ui->horizontalSlider_23->value()).arg(ui->horizontalSlider_24->value()).arg(ui->horizontalSlider_25->value())
             .arg(ui->horizontalSlider_26->value()).arg(ui->horizontalSlider_27->value()).arg(ui->horizontalSlider_28->value())
             .arg(ui->horizontalSlider_29->value());
-    QString str_16 = QString("width:%1").arg(ui->spinBox_14->value());
+    QString str_16 = QString("width:%1px;").arg(ui->spinBox_14->value());
+    QString str_17 = QString("padding-top:%1px;padding-bottom:%2px;").arg(ui->spinBox_15->value()).arg(ui->spinBox_15->value());
+    QString str_18 = QString("min-height:%1px;").arg(ui->spinBox_16->value());
+    QString str_19 = QString("QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{background:rgba(%1,%2,%3,%4);}QScrollBar::sub-page:vertical,QScrollBar::sub-page:vertical{background:rgba(%5,%6,%7,%8);}")
+            .arg(ui->horizontalSlider_22->value()).arg(ui->horizontalSlider_23->value()).arg(ui->horizontalSlider_24->value())
+            .arg(ui->horizontalSlider_25->value()).arg(ui->horizontalSlider_26->value()).arg(ui->horizontalSlider_27->value())
+            .arg(ui->horizontalSlider_28->value()).arg(ui->horizontalSlider_29->value());
     int control = ui->comboBox_7->currentIndex();
     QString s;
     switch (control)
@@ -85,12 +91,15 @@ void MainWindow::Labelshow()
          ui->textEdit->setText(s);
          break;
     case 2:
-        s = "QScrollBar:vertical{"+str_1+str_2+str_16+"}"+"QScrollBar::handle:vertical{"+str_4+str_13+str_11+str_12+"}";
+        s = "QScrollBar:vertical{"+str_1+str_2+str_4+str_5+str_6+str_16+str_17+"}"+"QScrollBar::handle:vertical{"+str_4+str_14+str_13+str_11+str_12+str_18+"}"+str_19;
          ui->verticalScrollBar->setStyleSheet(s);
          qDebug()<<s;
          ui->textEdit->setText(s);
         break;
     case 3:
+        s="::tab{"+str_1+str_2+str_3+str_4+str_5+str_6+str_7+str_8+str_16+"}";
+        qDebug()<<s;
+        ui->tabWidget_2->setStyleSheet(s);
         break;
     case 4:
         break;
@@ -344,6 +353,16 @@ void MainWindow::on_horizontalSlider_29_valueChanged(int value)
 }
 
 void MainWindow::on_spinBox_14_valueChanged(int arg1)
+{
+    Labelshow();
+}
+
+void MainWindow::on_spinBox_15_valueChanged(int arg1)
+{
+    Labelshow();
+}
+
+void MainWindow::on_spinBox_16_valueChanged(int arg1)
 {
     Labelshow();
 }
