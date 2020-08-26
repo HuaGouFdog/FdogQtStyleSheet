@@ -10,7 +10,7 @@ class MainWindow;
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
-
+    int control=0;
 public:
 
     explicit MainWindow(QWidget *parent = 0);
@@ -97,6 +97,34 @@ private slots:
     void on_spinBox_15_valueChanged(int arg1);
 
     void on_spinBox_16_valueChanged(int arg1);
+
+    void on_radioButton_2_clicked();
+
+    void on_radioButton_9_clicked();
+
+    void on_radioButton_8_clicked();
+
+    void on_radioButton_3_clicked();
+
+    void on_radioButton_4_clicked();
+
+    void on_radioButton_5_clicked();
+
+    void on_radioButton_6_clicked();
+
+    void on_radioButton_7_clicked();
+
+    void on_horizontalSlider_30_valueChanged(int value);
+    void on_horizontalSlider_31_valueChanged(int value);
+    void on_horizontalSlider_32_valueChanged(int value);
+    void on_horizontalSlider_33_valueChanged(int value);
+
+
+    void on_comboBox_3_currentIndexChanged(int index);
+
+    void on_comboBox_4_currentIndexChanged(int index);
+
+    void on_comboBox_5_currentIndexChanged(int index);
 
 private:
     Ui::MainWindow *ui;

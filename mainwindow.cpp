@@ -68,41 +68,60 @@ void MainWindow::Labelshow()
             .arg(ui->horizontalSlider_22->value()).arg(ui->horizontalSlider_23->value()).arg(ui->horizontalSlider_24->value())
             .arg(ui->horizontalSlider_25->value()).arg(ui->horizontalSlider_26->value()).arg(ui->horizontalSlider_27->value())
             .arg(ui->horizontalSlider_28->value()).arg(ui->horizontalSlider_29->value());
-    int control = ui->comboBox_7->currentIndex();
+    QString str_20 = QString("border-style:%1;").arg(ui->comboBox_14->currentText());
+    //边框宽度
+    QString str_21 = QString("font-style:%1;").arg(ui->comboBox_3->currentText());
+    QString str_22 = QString("font-weight: %1;").arg(ui->comboBox_4->currentText());
+    QString str_23 = QString("text-decoration:%1;").arg(ui->comboBox_5->currentText());
+    //int control = ui->comboBox_7->currentIndex();
     QString s;
     switch (control)
     {
     case 0:
-          s = str_1+str_2+str_3+str_4+str_5+str_6+str_7;
-            ui->label->setStyleSheet(s);
-            ui->pushButton->setStyleSheet(s);
-            ui->lineEdit_13->setStyleSheet(s);
-            ui->comboBox_6->setStyleSheet(s);
-            ui->spinBox_5->setStyleSheet(s);
-            ui->buttonBox->setStyleSheet(s);
-            ui->checkBox->setStyleSheet(s);
-            ui->radioButton->setStyleSheet(s);
-            ui->textEdit->setText(s);
+        s = str_1+str_2+str_3+str_4+str_5+str_6+str_7+str_21+str_22+str_23;
+        ui->label->setStyleSheet(s);
+//            ui->pushButton->setStyleSheet(s);
+//            ui->lineEdit_13->setStyleSheet(s);
+//            ui->comboBox_6->setStyleSheet(s);
+//            ui->spinBox_5->setStyleSheet(s);
+//            ui->buttonBox->setStyleSheet(s);
+//            ui->checkBox->setStyleSheet(s);
+//            ui->radioButton->setStyleSheet(s);
+        ui->textEdit->setText(s);
         break;
     case 1:
-         s = "QSlider::groove:horizontal{"+str_1+str_2+str_4+str_5+str_6+str_8+str_9+"}"+"QSlider::handle:horizontal{"+str_11+str_12+str_4+str_14+str_10+str_13+"}"+"QSlider::sub-page:horizontal {"+str_15+"}";
-         qDebug()<<s;
-         ui->horizontalSlider_13->setStyleSheet(s);
-         ui->textEdit->setText(s);
-         break;
+        s = str_1+str_2+str_3+str_4+str_5+str_6+str_7;
+        ui->lineEdit_13->setStyleSheet(s);
+        ui->textEdit->setText(s);
+        break;
     case 2:
-        s = "QScrollBar:vertical{"+str_1+str_2+str_4+str_5+str_6+str_16+str_17+"}"+"QScrollBar::handle:vertical{"+str_4+str_14+str_13+str_11+str_12+str_18+"}"+str_19;
+        s = str_1+str_2+str_3+str_4+str_5+str_6+str_7;
+        ui->pushButton->setStyleSheet(s);
+        ui->textEdit->setText(s);
+        break;
+    case 3:
+        s = "QScrollBar:vertical{"+str_1+str_2+str_4+str_5+str_6+str_16+str_17+"}"+"QScrollBar::handle:vertical{"+str_20+str_14+str_13+str_11+str_12+str_18+"}"+str_19;
          ui->verticalScrollBar->setStyleSheet(s);
          qDebug()<<s;
          ui->textEdit->setText(s);
         break;
-    case 3:
-        s="::tab{"+str_1+str_2+str_3+str_4+str_5+str_6+str_7+str_8+str_16+"}";
-        qDebug()<<s;
-        ui->tabWidget_2->setStyleSheet(s);
-        break;
     case 4:
+        s = "QSlider::groove:horizontal{"+str_1+str_2+str_4+str_5+str_6+str_8+str_9+"}"+"QSlider::handle:horizontal{"+str_11+str_12+str_20+str_14+str_10+str_13+"}"+"QSlider::sub-page:horizontal {"+str_15+"}";
+        qDebug()<<s;
+        ui->horizontalSlider_13->setStyleSheet(s);
+        ui->textEdit->setText(s);
         break;
+    case 5:
+        break;
+    case 6:
+        s="::tab{"+str_1+str_2+str_3+str_4+str_5+str_6+str_7+str_8+str_16+"}";
+        //qDebug()<<s;
+        ui->tabWidget_2->setStyleSheet(s);
+        ui->textEdit->setText(s);
+        break;
+    case 7:
+        break;
+
     default:
         break;
     }
@@ -247,41 +266,49 @@ void MainWindow::on_fontComboBox_currentFontChanged(const QFont &f)
 void MainWindow::on_horizontalSlider_14_valueChanged(int value)
 {
     Labelshow();
+    ui->lineEdit_14->setText(QString::number(value));
 }
 
 void MainWindow::on_horizontalSlider_15_valueChanged(int value)
 {
     Labelshow();
+    ui->lineEdit_15->setText(QString::number(value));
 }
 
 void MainWindow::on_horizontalSlider_16_valueChanged(int value)
 {
     Labelshow();
+    ui->lineEdit_16->setText(QString::number(value));
 }
 
 void MainWindow::on_horizontalSlider_17_valueChanged(int value)
 {
     Labelshow();
+    ui->lineEdit_17->setText(QString::number(value));
 }
 
 void MainWindow::on_horizontalSlider_18_valueChanged(int value)
 {
     Labelshow();
+    ui->lineEdit_18->setText(QString::number(value));
 }
 
 void MainWindow::on_horizontalSlider_19_valueChanged(int value)
 {
     Labelshow();
+    ui->lineEdit_19->setText(QString::number(value));
 }
 
 void MainWindow::on_horizontalSlider_20_valueChanged(int value)
 {
     Labelshow();
+    ui->lineEdit_20->setText(QString::number(value));
 }
 
 void MainWindow::on_horizontalSlider_21_valueChanged(int value)
 {
     Labelshow();
+    ui->lineEdit_21->setText(QString::number(value));
 }
 
 void MainWindow::on_spinBox_6_valueChanged(int arg1)
@@ -322,34 +349,42 @@ void MainWindow::on_spinBox_13_valueChanged(int arg1)
 void MainWindow::on_horizontalSlider_22_valueChanged(int value)
 {
     Labelshow();
+    ui->lineEdit_22->setText(QString::number(value));
 }
 void MainWindow::on_horizontalSlider_23_valueChanged(int value)
 {
     Labelshow();
+    ui->lineEdit_23->setText(QString::number(value));
 }
 void MainWindow::on_horizontalSlider_24_valueChanged(int value)
 {
     Labelshow();
+    ui->lineEdit_24->setText(QString::number(value));
 }
 void MainWindow::on_horizontalSlider_25_valueChanged(int value)
 {
     Labelshow();
+    ui->lineEdit_25->setText(QString::number(value));
 }
 void MainWindow::on_horizontalSlider_26_valueChanged(int value)
 {
     Labelshow();
+    ui->lineEdit_26->setText(QString::number(value));
 }
 void MainWindow::on_horizontalSlider_27_valueChanged(int value)
 {
     Labelshow();
+    ui->lineEdit_27->setText(QString::number(value));
 }
 void MainWindow::on_horizontalSlider_28_valueChanged(int value)
 {
     Labelshow();
+    ui->lineEdit_28->setText(QString::number(value));
 }
 void MainWindow::on_horizontalSlider_29_valueChanged(int value)
 {
     Labelshow();
+    ui->lineEdit_29->setText(QString::number(value));
 }
 
 void MainWindow::on_spinBox_14_valueChanged(int arg1)
@@ -363,6 +398,93 @@ void MainWindow::on_spinBox_15_valueChanged(int arg1)
 }
 
 void MainWindow::on_spinBox_16_valueChanged(int arg1)
+{
+    Labelshow();
+}
+
+void MainWindow::on_radioButton_2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+    control = 0;
+}
+
+void MainWindow::on_radioButton_9_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+    control = 1;
+}
+
+void MainWindow::on_radioButton_8_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+    control = 2;
+}
+
+void MainWindow::on_radioButton_3_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(3);
+    control = 3;
+}
+
+void MainWindow::on_radioButton_4_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(4);
+    control = 4;
+}
+
+void MainWindow::on_radioButton_5_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(5);
+    control = 5;
+}
+
+void MainWindow::on_radioButton_6_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(6);
+    control = 6;
+}
+
+void MainWindow::on_radioButton_7_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(7);
+    control = 7;
+}
+
+void MainWindow::on_horizontalSlider_30_valueChanged(int value)
+{
+    Labelshow();
+    ui->lineEdit_30->setText(QString::number(value));
+}
+void MainWindow::on_horizontalSlider_31_valueChanged(int value)
+{
+    Labelshow();
+    ui->lineEdit_31->setText(QString::number(value));
+}
+
+void MainWindow::on_horizontalSlider_32_valueChanged(int value)
+{
+    Labelshow();
+    ui->lineEdit_32->setText(QString::number(value));
+}
+
+void MainWindow::on_horizontalSlider_33_valueChanged(int value)
+{
+    Labelshow();
+    ui->lineEdit_33->setText(QString::number(value));
+}
+
+
+void MainWindow::on_comboBox_3_currentIndexChanged(int index)
+{
+    Labelshow();
+}
+
+void MainWindow::on_comboBox_4_currentIndexChanged(int index)
+{
+    Labelshow();
+}
+
+void MainWindow::on_comboBox_5_currentIndexChanged(int index)
 {
     Labelshow();
 }

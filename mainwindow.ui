@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1009</width>
-    <height>698</height>
+    <width>1188</width>
+    <height>638</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -27,10 +27,10 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>1011</width>
-      <height>431</height>
+      <x>410</x>
+      <y>57</y>
+      <width>781</width>
+      <height>573</height>
      </rect>
     </property>
     <property name="minimumSize">
@@ -42,7 +42,7 @@
     <property name="maximumSize">
      <size>
       <width>16777215</width>
-      <height>600</height>
+      <height>1000</height>
      </size>
     </property>
     <property name="styleSheet">
@@ -112,2314 +112,1865 @@ QSlider::handle:horizontal:disabled {
     <property name="title">
      <string/>
     </property>
-    <widget class="QGroupBox" name="groupBox_6">
-     <property name="geometry">
-      <rect>
-       <x>203</x>
-       <y>90</y>
-       <width>171</width>
-       <height>138</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>300</width>
-       <height>138</height>
-      </size>
-     </property>
-     <property name="title">
-      <string>边框颜色</string>
-     </property>
-     <layout class="QGridLayout" name="gridLayout_3">
-      <item row="0" column="0">
-       <widget class="QLabel" name="label_7">
-        <property name="minimumSize">
-         <size>
-          <width>15</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>R:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QSlider" name="horizontalSlider_5">
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="maximum">
-         <number>255</number>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="2">
-       <widget class="QLineEdit" name="lineEdit_5">
-        <property name="maximumSize">
-         <size>
-          <width>40</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>0</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="label_8">
-        <property name="minimumSize">
-         <size>
-          <width>15</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>G:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QSlider" name="horizontalSlider_6">
-        <property name="maximum">
-         <number>255</number>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="2">
-       <widget class="QLineEdit" name="lineEdit_6">
-        <property name="maximumSize">
-         <size>
-          <width>40</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>0</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="label_9">
-        <property name="minimumSize">
-         <size>
-          <width>15</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>B:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QSlider" name="horizontalSlider_7">
-        <property name="maximum">
-         <number>255</number>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="2">
-       <widget class="QLineEdit" name="lineEdit_7">
-        <property name="maximumSize">
-         <size>
-          <width>40</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>0</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
-       <widget class="QLabel" name="label_10">
-        <property name="minimumSize">
-         <size>
-          <width>15</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>A:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="1">
-       <widget class="QSlider" name="horizontalSlider_8">
-        <property name="maximum">
-         <number>255</number>
-        </property>
-        <property name="value">
-         <number>255</number>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="2">
-       <widget class="QLineEdit" name="lineEdit_8">
-        <property name="maximumSize">
-         <size>
-          <width>40</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>255</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QGroupBox" name="groupBox_4">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>90</y>
-       <width>171</width>
-       <height>138</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>300</width>
-       <height>138</height>
-      </size>
-     </property>
-     <property name="title">
-      <string>背景颜色</string>
-     </property>
-     <layout class="QGridLayout" name="gridLayout_2">
-      <item row="0" column="2">
-       <widget class="QLineEdit" name="lineEdit">
-        <property name="maximumSize">
-         <size>
-          <width>40</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>0</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="2">
-       <widget class="QLineEdit" name="lineEdit_2">
-        <property name="maximumSize">
-         <size>
-          <width>40</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>0</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="2">
-       <widget class="QLineEdit" name="lineEdit_3">
-        <property name="maximumSize">
-         <size>
-          <width>40</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>0</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="1">
-       <widget class="QSlider" name="horizontalSlider_4">
-        <property name="maximum">
-         <number>255</number>
-        </property>
-        <property name="value">
-         <number>255</number>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QSlider" name="horizontalSlider">
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="maximum">
-         <number>255</number>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="label_3">
-        <property name="minimumSize">
-         <size>
-          <width>15</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>G:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="label_4">
-        <property name="minimumSize">
-         <size>
-          <width>15</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>B:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QSlider" name="horizontalSlider_3">
-        <property name="maximum">
-         <number>255</number>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
-       <widget class="QLabel" name="label_5">
-        <property name="minimumSize">
-         <size>
-          <width>15</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>A:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0">
-       <widget class="QLabel" name="label_2">
-        <property name="minimumSize">
-         <size>
-          <width>15</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>R:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QSlider" name="horizontalSlider_2">
-        <property name="maximum">
-         <number>255</number>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="2">
-       <widget class="QLineEdit" name="lineEdit_4">
-        <property name="maximumSize">
-         <size>
-          <width>40</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>255</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QGroupBox" name="groupBox_7">
-     <property name="geometry">
-      <rect>
-       <x>393</x>
-       <y>90</y>
-       <width>171</width>
-       <height>138</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>300</width>
-       <height>138</height>
-      </size>
-     </property>
-     <property name="title">
-      <string>字体颜色</string>
-     </property>
-     <layout class="QGridLayout" name="gridLayout_4">
-      <item row="0" column="0">
-       <widget class="QLabel" name="label_14">
-        <property name="minimumSize">
-         <size>
-          <width>15</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>R:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QSlider" name="horizontalSlider_9">
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="maximum">
-         <number>255</number>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="2">
-       <widget class="QLineEdit" name="lineEdit_9">
-        <property name="maximumSize">
-         <size>
-          <width>40</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>0</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="label_15">
-        <property name="minimumSize">
-         <size>
-          <width>15</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>G:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QSlider" name="horizontalSlider_10">
-        <property name="maximum">
-         <number>255</number>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="2">
-       <widget class="QLineEdit" name="lineEdit_10">
-        <property name="maximumSize">
-         <size>
-          <width>40</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>0</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="label_16">
-        <property name="minimumSize">
-         <size>
-          <width>15</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>B:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QSlider" name="horizontalSlider_11">
-        <property name="maximum">
-         <number>255</number>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="2">
-       <widget class="QLineEdit" name="lineEdit_11">
-        <property name="maximumSize">
-         <size>
-          <width>40</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>0</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
-       <widget class="QLabel" name="label_17">
-        <property name="minimumSize">
-         <size>
-          <width>15</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>A:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="1">
-       <widget class="QSlider" name="horizontalSlider_12">
-        <property name="maximum">
-         <number>255</number>
-        </property>
-        <property name="value">
-         <number>255</number>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="2">
-       <widget class="QLineEdit" name="lineEdit_12">
-        <property name="maximumSize">
-         <size>
-          <width>40</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>255</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QGroupBox" name="groupBox_5">
-     <property name="geometry">
-      <rect>
-       <x>13</x>
-       <y>240</y>
-       <width>551</width>
-       <height>131</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string>其他</string>
-     </property>
-     <widget class="QLabel" name="label_6">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>22</y>
-        <width>54</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>文字字体:</string>
-      </property>
-     </widget>
-     <widget class="QFontComboBox" name="fontComboBox">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>22</y>
-        <width>100</width>
-        <height>20</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_11">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>48</y>
-        <width>54</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>文字大小:</string>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="spinBox">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>49</y>
-        <width>100</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="value">
-       <number>15</number>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_12">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>74</y>
-        <width>16</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_13">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>74</y>
-        <width>54</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>边框风格:</string>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="spinBox_2">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>101</y>
-        <width>100</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="value">
-       <number>1</number>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_18">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>100</y>
-        <width>54</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>边框大小:</string>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="comboBox">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>74</y>
-        <width>100</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <item>
-       <property name="text">
-        <string extracomment="无边框">none</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string extracomment="实线">solid</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string extracomment="点状">dotted</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string extracomment="虚线">dashed</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string extracomment="双线">double</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string extracomment="3D凹槽">groove </string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string extracomment="3D垄状">ridge</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string extracomment="3Dinset">inset </string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string extracomment="3Doutset">outset </string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string extracomment="从父元素继承">inherit </string>
-       </property>
-      </item>
-     </widget>
-     <widget class="QSpinBox" name="spinBox_3">
-      <property name="geometry">
-       <rect>
-        <x>240</x>
-        <y>21</y>
-        <width>100</width>
-        <height>20</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_19">
-      <property name="geometry">
-       <rect>
-        <x>180</x>
-        <y>20</y>
-        <width>54</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>圆角大小:</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_20">
-      <property name="geometry">
-       <rect>
-        <x>180</x>
-        <y>48</y>
-        <width>54</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>文字对齐:</string>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="comboBox_2">
-      <property name="geometry">
-       <rect>
-        <x>240</x>
-        <y>48</y>
-        <width>100</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <item>
-       <property name="text">
-        <string>左上对齐</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>左下对齐</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>左对齐</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>右上对齐</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>右下对齐</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>右对齐</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>中上居中</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>中下居中</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>居中</string>
-       </property>
-      </item>
-     </widget>
-     <widget class="QComboBox" name="comboBox_7">
-      <property name="geometry">
-       <rect>
-        <x>420</x>
-        <y>73</y>
-        <width>100</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <item>
-       <property name="text">
-        <string>基础组件</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Slider</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>ScrollBar</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>TabWidget</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>TableWidget</string>
-       </property>
-      </item>
-     </widget>
-     <widget class="QLabel" name="label_28">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>73</y>
-        <width>54</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>颜色范围:</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_23">
-      <property name="geometry">
-       <rect>
-        <x>180</x>
-        <y>74</y>
-        <width>54</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>文字修饰:</string>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="comboBox_5">
-      <property name="geometry">
-       <rect>
-        <x>240</x>
-        <y>74</y>
-        <width>100</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <item>
-       <property name="text">
-        <string>无</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>underline</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>overline</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>line-through</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>blink</string>
-       </property>
-      </item>
-     </widget>
-     <widget class="QLabel" name="label_22">
-      <property name="geometry">
-       <rect>
-        <x>180</x>
-        <y>100</y>
-        <width>54</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>文字样式:</string>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="comboBox_3">
-      <property name="geometry">
-       <rect>
-        <x>240</x>
-        <y>100</y>
-        <width>100</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <item>
-       <property name="text">
-        <string>normal</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>oblique</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>italic</string>
-       </property>
-      </item>
-     </widget>
-     <widget class="QLabel" name="label_21">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>21</y>
-        <width>54</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>文字粗细:</string>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="spinBox_4">
-      <property name="geometry">
-       <rect>
-        <x>420</x>
-        <y>49</y>
-        <width>100</width>
-        <height>18</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="comboBox_4">
-      <property name="geometry">
-       <rect>
-        <x>420</x>
-        <y>21</y>
-        <width>100</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <item>
-       <property name="text">
-        <string>normal</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>bold</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>lighter</string>
-       </property>
-      </item>
-     </widget>
-     <widget class="QLabel" name="label_24">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>49</y>
-        <width>54</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>文字间距:</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QTabWidget" name="tabWidget_3">
-     <property name="geometry">
-      <rect>
-       <x>570</x>
-       <y>90</y>
-       <width>416</width>
-       <height>291</height>
-      </rect>
-     </property>
-     <property name="currentIndex">
-      <number>3</number>
-     </property>
-     <widget class="QWidget" name="tab_9">
-      <attribute name="title">
-       <string>ScrollBar相关</string>
-      </attribute>
-      <widget class="QSpinBox" name="spinBox_14">
-       <property name="geometry">
-        <rect>
-         <x>70</x>
-         <y>20</y>
-         <width>101</width>
-         <height>18</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_27">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>20</y>
-         <width>54</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>上下宽度:</string>
-       </property>
-      </widget>
-      <widget class="QSpinBox" name="spinBox_15">
-       <property name="geometry">
-        <rect>
-         <x>70</x>
-         <y>50</y>
-         <width>100</width>
-         <height>18</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_30">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>50</y>
-         <width>54</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>箭头高度:</string>
-       </property>
-      </widget>
-      <widget class="QSpinBox" name="spinBox_16">
-       <property name="geometry">
-        <rect>
-         <x>70</x>
-         <y>80</y>
-         <width>100</width>
-         <height>18</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_50">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>80</y>
-         <width>54</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>按钮高度:</string>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QWidget" name="tab_6">
-      <attribute name="title">
-       <string>Slider相关</string>
-      </attribute>
-      <widget class="QScrollArea" name="scrollArea">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>410</width>
-         <height>271</height>
-        </rect>
-       </property>
-       <property name="widgetResizable">
-        <bool>false</bool>
-       </property>
-       <widget class="QWidget" name="scrollAreaWidgetContents">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>-331</y>
-          <width>391</width>
-          <height>600</height>
-         </rect>
-        </property>
-        <widget class="QGroupBox" name="groupBox_20">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
-           <y>70</y>
-           <width>371</width>
-           <height>81</height>
-          </rect>
-         </property>
-         <property name="title">
-          <string>按钮</string>
-         </property>
-         <widget class="QLabel" name="label_29">
-          <property name="geometry">
-           <rect>
-            <x>10</x>
-            <y>50</y>
-            <width>54</width>
-            <height>16</height>
-           </rect>
-          </property>
-          <property name="text">
-           <string>上/下高:</string>
-          </property>
-         </widget>
-         <widget class="QSpinBox" name="spinBox_10">
-          <property name="geometry">
-           <rect>
-            <x>70</x>
-            <y>50</y>
-            <width>51</width>
-            <height>18</height>
-           </rect>
-          </property>
-          <property name="minimum">
-           <number>-10</number>
-          </property>
-          <property name="value">
-           <number>-3</number>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_31">
-          <property name="geometry">
-           <rect>
-            <x>10</x>
-            <y>19</y>
-            <width>54</width>
-            <height>16</height>
-           </rect>
-          </property>
-          <property name="text">
-           <string>宽度大小:</string>
-          </property>
-         </widget>
-         <widget class="QSpinBox" name="spinBox_11">
-          <property name="geometry">
-           <rect>
-            <x>120</x>
-            <y>50</y>
-            <width>51</width>
-            <height>18</height>
-           </rect>
-          </property>
-          <property name="minimum">
-           <number>-10</number>
-          </property>
-          <property name="value">
-           <number>-3</number>
-          </property>
-         </widget>
-         <widget class="QSpinBox" name="spinBox_9">
-          <property name="geometry">
-           <rect>
-            <x>70</x>
-            <y>20</y>
-            <width>100</width>
-            <height>18</height>
-           </rect>
-          </property>
-          <property name="value">
-           <number>5</number>
-          </property>
-         </widget>
-         <widget class="QSpinBox" name="spinBox_12">
-          <property name="geometry">
-           <rect>
-            <x>250</x>
-            <y>51</y>
-            <width>100</width>
-            <height>18</height>
-           </rect>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_40">
-          <property name="geometry">
-           <rect>
-            <x>190</x>
-            <y>50</y>
-            <width>54</width>
-            <height>16</height>
-           </rect>
-          </property>
-          <property name="text">
-           <string>圆角大小:</string>
-          </property>
-         </widget>
-         <widget class="QSpinBox" name="spinBox_13">
-          <property name="geometry">
-           <rect>
-            <x>250</x>
-            <y>20</y>
-            <width>100</width>
-            <height>18</height>
-           </rect>
-          </property>
-          <property name="value">
-           <number>1</number>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_41">
-          <property name="geometry">
-           <rect>
-            <x>190</x>
-            <y>19</y>
-            <width>54</width>
-            <height>16</height>
-           </rect>
-          </property>
-          <property name="text">
-           <string>边框大小:</string>
-          </property>
-         </widget>
-        </widget>
-        <widget class="QGroupBox" name="groupBox_21">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
-           <y>160</y>
-           <width>181</width>
-           <height>121</height>
-          </rect>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>300</width>
-           <height>138</height>
-          </size>
-         </property>
-         <property name="title">
-          <string>按钮背景颜色</string>
-         </property>
-         <layout class="QGridLayout" name="gridLayout_5">
-          <item row="0" column="0">
-           <widget class="QLabel" name="label_35">
-            <property name="minimumSize">
-             <size>
-              <width>15</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>R:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="0">
-           <widget class="QLabel" name="label_34">
-            <property name="minimumSize">
-             <size>
-              <width>15</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>A:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="2">
-           <widget class="QLineEdit" name="lineEdit_17">
-            <property name="maximumSize">
-             <size>
-              <width>40</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>255</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="2">
-           <widget class="QLineEdit" name="lineEdit_16">
-            <property name="maximumSize">
-             <size>
-              <width>40</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>0</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="2">
-           <widget class="QLineEdit" name="lineEdit_15">
-            <property name="maximumSize">
-             <size>
-              <width>40</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>0</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="2">
-           <widget class="QLineEdit" name="lineEdit_14">
-            <property name="maximumSize">
-             <size>
-              <width>40</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>0</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="label_32">
-            <property name="minimumSize">
-             <size>
-              <width>15</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>G:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="0">
-           <widget class="QLabel" name="label_33">
-            <property name="minimumSize">
-             <size>
-              <width>15</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>B:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QSlider" name="horizontalSlider_14">
-            <property name="maximum">
-             <number>255</number>
-            </property>
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1">
-           <widget class="QSlider" name="horizontalSlider_15">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="maximum">
-             <number>255</number>
-            </property>
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="1">
-           <widget class="QSlider" name="horizontalSlider_16">
-            <property name="maximum">
-             <number>255</number>
-            </property>
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="1">
-           <widget class="QSlider" name="horizontalSlider_17">
-            <property name="maximum">
-             <number>255</number>
-            </property>
-            <property name="value">
-             <number>255</number>
-            </property>
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-        <widget class="QGroupBox" name="groupBox_22">
-         <property name="geometry">
-          <rect>
-           <x>200</x>
-           <y>160</y>
-           <width>181</width>
-           <height>121</height>
-          </rect>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>300</width>
-           <height>138</height>
-          </size>
-         </property>
-         <property name="title">
-          <string>按钮边框颜色</string>
-         </property>
-         <layout class="QGridLayout" name="gridLayout_6">
-          <item row="0" column="0">
-           <widget class="QLabel" name="label_36">
-            <property name="minimumSize">
-             <size>
-              <width>15</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>R:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QSlider" name="horizontalSlider_18">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="maximum">
-             <number>255</number>
-            </property>
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="2">
-           <widget class="QLineEdit" name="lineEdit_18">
-            <property name="maximumSize">
-             <size>
-              <width>40</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>0</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="QLabel" name="label_37">
-            <property name="minimumSize">
-             <size>
-              <width>15</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>G:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="1">
-           <widget class="QSlider" name="horizontalSlider_19">
-            <property name="maximum">
-             <number>255</number>
-            </property>
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="2">
-           <widget class="QLineEdit" name="lineEdit_19">
-            <property name="maximumSize">
-             <size>
-              <width>40</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>0</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="label_38">
-            <property name="minimumSize">
-             <size>
-              <width>15</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>B:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1">
-           <widget class="QSlider" name="horizontalSlider_20">
-            <property name="maximum">
-             <number>255</number>
-            </property>
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="2">
-           <widget class="QLineEdit" name="lineEdit_20">
-            <property name="maximumSize">
-             <size>
-              <width>40</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>0</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="0">
-           <widget class="QLabel" name="label_39">
-            <property name="minimumSize">
-             <size>
-              <width>15</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>A:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="1">
-           <widget class="QSlider" name="horizontalSlider_21">
-            <property name="maximum">
-             <number>255</number>
-            </property>
-            <property name="value">
-             <number>255</number>
-            </property>
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="2">
-           <widget class="QLineEdit" name="lineEdit_21">
-            <property name="maximumSize">
-             <size>
-              <width>40</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>255</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-        <widget class="QGroupBox" name="groupBox_3">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
-           <y>10</y>
-           <width>371</width>
-           <height>51</height>
-          </rect>
-         </property>
-         <property name="title">
-          <string>进度框</string>
-         </property>
-         <widget class="QSpinBox" name="spinBox_8">
-          <property name="geometry">
-           <rect>
-            <x>130</x>
-            <y>20</y>
-            <width>41</width>
-            <height>18</height>
-           </rect>
-          </property>
-          <property name="minimum">
-           <number>-10</number>
-          </property>
-          <property name="value">
-           <number>3</number>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_26">
-          <property name="geometry">
-           <rect>
-            <x>10</x>
-            <y>20</y>
-            <width>71</width>
-            <height>16</height>
-           </rect>
-          </property>
-          <property name="text">
-           <string>left/right:</string>
-          </property>
-         </widget>
-         <widget class="QSpinBox" name="spinBox_6">
-          <property name="geometry">
-           <rect>
-            <x>250</x>
-            <y>20</y>
-            <width>100</width>
-            <height>18</height>
-           </rect>
-          </property>
-          <property name="value">
-           <number>5</number>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_25">
-          <property name="geometry">
-           <rect>
-            <x>190</x>
-            <y>19</y>
-            <width>54</width>
-            <height>16</height>
-           </rect>
-          </property>
-          <property name="text">
-           <string>宽度大小:</string>
-          </property>
-         </widget>
-         <widget class="QSpinBox" name="spinBox_7">
-          <property name="geometry">
-           <rect>
-            <x>89</x>
-            <y>20</y>
-            <width>41</width>
-            <height>18</height>
-           </rect>
-          </property>
-          <property name="minimum">
-           <number>-10</number>
-          </property>
-          <property name="value">
-           <number>3</number>
-          </property>
-         </widget>
-        </widget>
-        <widget class="QGroupBox" name="groupBox_15">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
-           <y>290</y>
-           <width>371</width>
-           <height>151</height>
-          </rect>
-         </property>
-         <property name="title">
-          <string>进度条已划过（从1向2过度）</string>
-         </property>
-         <widget class="QGroupBox" name="groupBox_24">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>20</y>
-            <width>181</width>
-            <height>121</height>
-           </rect>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>300</width>
-            <height>138</height>
-           </size>
-          </property>
-          <property name="title">
-           <string>颜色1</string>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_7">
-           <item row="0" column="0">
-            <widget class="QLabel" name="label_42">
-             <property name="minimumSize">
-              <size>
-               <width>15</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>R:</string>
-             </property>
-            </widget>
-           </item>
-           <item row="4" column="0">
-            <widget class="QLabel" name="label_43">
-             <property name="minimumSize">
-              <size>
-               <width>15</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>A:</string>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="2">
-            <widget class="QLineEdit" name="lineEdit_25">
-             <property name="maximumSize">
-              <size>
-               <width>40</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>0</string>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="2">
-            <widget class="QLineEdit" name="lineEdit_24">
-             <property name="maximumSize">
-              <size>
-               <width>40</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>0</string>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="2">
-            <widget class="QLineEdit" name="lineEdit_23">
-             <property name="maximumSize">
-              <size>
-               <width>40</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>0</string>
-             </property>
-            </widget>
-           </item>
-           <item row="4" column="2">
-            <widget class="QLineEdit" name="lineEdit_22">
-             <property name="maximumSize">
-              <size>
-               <width>40</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>0</string>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <widget class="QSlider" name="horizontalSlider_22">
-             <property name="maximum">
-              <number>255</number>
-             </property>
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="0">
-            <widget class="QLabel" name="label_45">
-             <property name="minimumSize">
-              <size>
-               <width>15</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>B:</string>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="0">
-            <widget class="QLabel" name="label_44">
-             <property name="minimumSize">
-              <size>
-               <width>15</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>G:</string>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="1">
-            <widget class="QSlider" name="horizontalSlider_24">
-             <property name="maximum">
-              <number>255</number>
-             </property>
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="1">
-            <widget class="QSlider" name="horizontalSlider_23">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="maximum">
-              <number>255</number>
-             </property>
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-            </widget>
-           </item>
-           <item row="4" column="1">
-            <widget class="QSlider" name="horizontalSlider_25">
-             <property name="maximum">
-              <number>255</number>
-             </property>
-             <property name="value">
-              <number>0</number>
-             </property>
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-         <widget class="QGroupBox" name="groupBox_25">
-          <property name="geometry">
-           <rect>
-            <x>190</x>
-            <y>20</y>
-            <width>181</width>
-            <height>121</height>
-           </rect>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>300</width>
-            <height>138</height>
-           </size>
-          </property>
-          <property name="title">
-           <string>颜色2</string>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_8">
-           <item row="0" column="0">
-            <widget class="QLabel" name="label_46">
-             <property name="minimumSize">
-              <size>
-               <width>15</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>R:</string>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <widget class="QSlider" name="horizontalSlider_26">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="maximum">
-              <number>255</number>
-             </property>
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="2">
-            <widget class="QLineEdit" name="lineEdit_26">
-             <property name="maximumSize">
-              <size>
-               <width>40</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>0</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="0">
-            <widget class="QLabel" name="label_47">
-             <property name="minimumSize">
-              <size>
-               <width>15</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>G:</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="1">
-            <widget class="QSlider" name="horizontalSlider_27">
-             <property name="maximum">
-              <number>255</number>
-             </property>
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="2">
-            <widget class="QLineEdit" name="lineEdit_27">
-             <property name="maximumSize">
-              <size>
-               <width>40</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>0</string>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="0">
-            <widget class="QLabel" name="label_48">
-             <property name="minimumSize">
-              <size>
-               <width>15</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>B:</string>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="1">
-            <widget class="QSlider" name="horizontalSlider_28">
-             <property name="maximum">
-              <number>255</number>
-             </property>
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="2">
-            <widget class="QLineEdit" name="lineEdit_28">
-             <property name="maximumSize">
-              <size>
-               <width>40</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>0</string>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="0">
-            <widget class="QLabel" name="label_49">
-             <property name="minimumSize">
-              <size>
-               <width>15</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>A:</string>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="1">
-            <widget class="QSlider" name="horizontalSlider_29">
-             <property name="maximum">
-              <number>255</number>
-             </property>
-             <property name="value">
-              <number>0</number>
-             </property>
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="2">
-            <widget class="QLineEdit" name="lineEdit_29">
-             <property name="maximumSize">
-              <size>
-               <width>40</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>0</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-        </widget>
-        <widget class="QCheckBox" name="checkBox_2">
-         <property name="geometry">
-          <rect>
-           <x>50</x>
-           <y>460</y>
-           <width>111</width>
-           <height>21</height>
-          </rect>
-         </property>
-         <property name="text">
-          <string>是否使用交替色</string>
-         </property>
-        </widget>
-       </widget>
-      </widget>
-     </widget>
-     <widget class="QWidget" name="tab_12">
-      <attribute name="title">
-       <string>表格相关</string>
-      </attribute>
-     </widget>
-     <widget class="QWidget" name="tab_7">
-      <attribute name="title">
-       <string>QSS代码</string>
-      </attribute>
-      <widget class="QTextEdit" name="textEdit">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>385</width>
-         <height>266</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="html">
-        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-     </widget>
-    </widget>
-    <widget class="QFrame" name="frame">
+    <widget class="QScrollArea" name="scrollArea_2">
      <property name="geometry">
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>751</width>
-       <height>41</height>
+       <width>771</width>
+       <height>571</height>
       </rect>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
+     <property name="widgetResizable">
+      <bool>false</bool>
      </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
-       <widget class="QLabel" name="label_51">
-        <property name="text">
-         <string>请选择控件：</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_2">
-        <property name="text">
-         <string>Label</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_9">
-        <property name="text">
-         <string>LineEdit</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_8">
-        <property name="text">
-         <string>PushButton</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_3">
-        <property name="text">
-         <string>ScrollBar</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_4">
-        <property name="text">
-         <string>Slider</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_5">
-        <property name="text">
-         <string>Progressbar</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_6">
-        <property name="text">
-         <string>TabWidget</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_7">
-        <property name="text">
-         <string>TableWidget</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-   </widget>
-   <widget class="QTabWidget" name="tabWidget">
-    <property name="geometry">
-     <rect>
-      <x>9</x>
-      <y>463</y>
-      <width>981</width>
-      <height>241</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>0</width>
-      <height>0</height>
-     </size>
-    </property>
-    <property name="currentIndex">
-     <number>0</number>
-    </property>
-    <widget class="QWidget" name="tab">
-     <attribute name="title">
-      <string>基础组件</string>
-     </attribute>
-     <widget class="QGroupBox" name="groupBox_2">
+     <widget class="QWidget" name="scrollAreaWidgetContents_2">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>20</y>
-        <width>221</width>
-        <height>81</height>
+        <x>0</x>
+        <y>0</y>
+        <width>751</width>
+        <height>1000</height>
        </rect>
       </property>
-      <property name="styleSheet">
-       <string notr="true">#groupBox_2
-{
-background-color: rgb(197, 197, 197);
-}</string>
-      </property>
-      <property name="title">
-       <string>Label效果</string>
-      </property>
-      <widget class="QLabel" name="label">
+      <widget class="QGroupBox" name="groupBox_27">
        <property name="geometry">
         <rect>
-         <x>40</x>
-         <y>30</y>
-         <width>140</width>
-         <height>30</height>
+         <x>190</x>
+         <y>150</y>
+         <width>171</width>
+         <height>138</height>
         </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>138</height>
+        </size>
        </property>
        <property name="styleSheet">
         <string notr="true"/>
        </property>
-       <property name="text">
-        <string>花狗制作</string>
+       <property name="title">
+        <string>子控件字体颜色</string>
        </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-       </property>
+       <layout class="QGridLayout" name="gridLayout_9">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_73">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>R:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSlider" name="horizontalSlider_30">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLineEdit" name="lineEdit_30">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_74">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>G:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSlider" name="horizontalSlider_31">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="lineEdit_31">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_75">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>B:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSlider" name="horizontalSlider_32">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="lineEdit_32">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_76">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>A:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSlider" name="horizontalSlider_33">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="value">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="lineEdit_33">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>255</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_8">
-      <property name="geometry">
-       <rect>
-        <x>250</x>
-        <y>20</y>
-        <width>221</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">#groupBox_8
-{
-background-color: rgb(197, 197, 197);
-}</string>
-      </property>
-      <property name="title">
-       <string>PushButton效果</string>
-      </property>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QGroupBox" name="groupBox_4">
        <property name="geometry">
         <rect>
-         <x>40</x>
-         <y>30</y>
+         <x>10</x>
+         <y>10</y>
+         <width>171</width>
+         <height>138</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>138</height>
+        </size>
+       </property>
+       <property name="title">
+        <string>主控件背景颜色</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="2">
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="lineEdit_2">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="lineEdit_3">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSlider" name="horizontalSlider_4">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="value">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSlider" name="horizontalSlider">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>G:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>B:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSlider" name="horizontalSlider_3">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>A:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>R:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSlider" name="horizontalSlider_2">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="lineEdit_4">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>255</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>150</y>
+         <width>171</width>
+         <height>138</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>138</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="title">
+        <string>主控件字体颜色</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_14">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>R:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSlider" name="horizontalSlider_9">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLineEdit" name="lineEdit_9">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_15">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>G:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSlider" name="horizontalSlider_10">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="lineEdit_10">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_16">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>B:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSlider" name="horizontalSlider_11">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="lineEdit_11">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_17">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>A:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSlider" name="horizontalSlider_12">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="value">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="lineEdit_12">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>255</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_6">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>10</y>
+         <width>171</width>
+         <height>138</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>138</height>
+        </size>
+       </property>
+       <property name="title">
+        <string>主控件边框颜色</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>R:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSlider" name="horizontalSlider_5">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLineEdit" name="lineEdit_5">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>G:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSlider" name="horizontalSlider_6">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="lineEdit_6">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>B:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSlider" name="horizontalSlider_7">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="lineEdit_7">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>A:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSlider" name="horizontalSlider_8">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="value">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="lineEdit_8">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>255</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_24">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>150</y>
+         <width>181</width>
+         <height>138</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>138</height>
+        </size>
+       </property>
+       <property name="title">
+        <string>渐变色①</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_42">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>R:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_43">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>A:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSlider" name="horizontalSlider_22">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_45">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>B:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_44">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>G:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSlider" name="horizontalSlider_24">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSlider" name="horizontalSlider_23">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QSlider" name="horizontalSlider_25">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="value">
+           <number>0</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLineEdit" name="lineEdit_22">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="lineEdit_23">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="lineEdit_24">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QLineEdit" name="lineEdit_25">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_21">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>10</y>
+         <width>181</width>
+         <height>138</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>138</height>
+        </size>
+       </property>
+       <property name="title">
+        <string>控件按钮背景颜色</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_35">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>R:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_34">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>A:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QLineEdit" name="lineEdit_17">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>255</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="lineEdit_16">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="lineEdit_15">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLineEdit" name="lineEdit_14">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_32">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>G:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_33">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>B:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSlider" name="horizontalSlider_14">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSlider" name="horizontalSlider_15">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSlider" name="horizontalSlider_16">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QSlider" name="horizontalSlider_17">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="value">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_25">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>150</y>
+         <width>181</width>
+         <height>138</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>138</height>
+        </size>
+       </property>
+       <property name="title">
+        <string>渐变色②</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_46">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>R:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSlider" name="horizontalSlider_26">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLineEdit" name="lineEdit_26">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_47">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>G:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSlider" name="horizontalSlider_27">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="lineEdit_27">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_48">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>B:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSlider" name="horizontalSlider_28">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="lineEdit_28">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_49">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>A:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSlider" name="horizontalSlider_29">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="value">
+           <number>0</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="lineEdit_29">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_22">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>10</y>
+         <width>181</width>
+         <height>138</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>138</height>
+        </size>
+       </property>
+       <property name="title">
+        <string>控件按钮边框颜色</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_36">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>R:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSlider" name="horizontalSlider_18">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLineEdit" name="lineEdit_18">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_37">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>G:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSlider" name="horizontalSlider_19">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="lineEdit_19">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_38">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>B:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSlider" name="horizontalSlider_20">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="lineEdit_20">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_39">
+          <property name="minimumSize">
+           <size>
+            <width>15</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>A:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSlider" name="horizontalSlider_21">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="value">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="lineEdit_21">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>255</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>300</y>
+         <width>731</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>主控件</string>
+       </property>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>22</y>
+          <width>54</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>文字字体:</string>
+        </property>
+       </widget>
+       <widget class="QFontComboBox" name="fontComboBox">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>22</y>
+          <width>100</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>48</y>
+          <width>54</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>文字大小:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>49</y>
+          <width>100</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="value">
+         <number>15</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>74</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>20</y>
+          <width>54</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>边框风格:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_2">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>47</y>
+          <width>100</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="value">
+         <number>1</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>46</y>
+          <width>54</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>边框大小:</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>20</y>
+          <width>100</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string extracomment="无边框">none</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="实线">solid</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="点状">dotted</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="虚线">dashed</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="双线">double</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="3D凹槽">groove </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="3D垄状">ridge</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="3Dinset">inset </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="3Doutset">outset </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="从父元素继承">inherit </string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_3">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>80</y>
+          <width>100</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>79</y>
+          <width>54</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>圆角大小:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>54</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>文字对齐:</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_2">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>80</y>
+          <width>100</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>左上对齐</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>左下对齐</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>左对齐</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>右上对齐</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>右下对齐</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>右对齐</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>中上居中</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>中下居中</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>居中</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_23">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>80</y>
+          <width>54</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>文字修饰:</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_5">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>80</y>
+          <width>100</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>无</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>underline</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>overline</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>line-through</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>blink</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>20</y>
+          <width>54</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>文字样式:</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_3">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>20</y>
+          <width>100</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>normal</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>oblique</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>italic</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>50</y>
+          <width>54</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>文字粗细:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_4">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>20</y>
+          <width>100</width>
+          <height>18</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_4">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>52</y>
+          <width>100</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>normal</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>bold</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>lighter</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_24">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>20</y>
+          <width>54</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>文字间距:</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>700</y>
          <width>140</width>
          <height>30</height>
         </rect>
        </property>
-       <property name="text">
-        <string>花狗显示</string>
+       <property name="standardButtons">
+        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
        </property>
       </widget>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_9">
-      <property name="geometry">
-       <rect>
-        <x>490</x>
-        <y>20</y>
-        <width>221</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">#groupBox_9
-{
-background-color: rgb(197, 197, 197);
-}</string>
-      </property>
-      <property name="title">
-       <string>LineEdit效果</string>
-      </property>
-      <widget class="QLineEdit" name="lineEdit_13">
+      <widget class="QSpinBox" name="spinBox_5">
        <property name="geometry">
         <rect>
-         <x>40</x>
-         <y>30</y>
+         <x>250</x>
+         <y>780</y>
          <width>140</width>
          <height>30</height>
         </rect>
        </property>
-       <property name="font">
-        <font>
-         <family>80 Decibels</family>
-        </font>
-       </property>
-       <property name="text">
-        <string>花狗显示</string>
-       </property>
       </widget>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_10">
-      <property name="geometry">
-       <rect>
-        <x>250</x>
-        <y>120</y>
-        <width>221</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">#groupBox_10
-{
-background-color: rgb(197, 197, 197);
-}</string>
-      </property>
-      <property name="title">
-       <string>ComboBox效果</string>
-      </property>
       <widget class="QComboBox" name="comboBox_6">
        <property name="geometry">
         <rect>
-         <x>40</x>
-         <y>30</y>
+         <x>250</x>
+         <y>740</y>
          <width>140</width>
          <height>30</height>
         </rect>
@@ -2440,59 +1991,11 @@ background-color: rgb(197, 197, 197);
         </property>
        </item>
       </widget>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_11">
-      <property name="geometry">
-       <rect>
-        <x>490</x>
-        <y>120</y>
-        <width>221</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">#groupBox_11
-{
-background-color: rgb(197, 197, 197);
-}</string>
-      </property>
-      <property name="title">
-       <string>SpinBox效果</string>
-      </property>
-      <widget class="QSpinBox" name="spinBox_5">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>30</y>
-         <width>140</width>
-         <height>30</height>
-        </rect>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_12">
-      <property name="geometry">
-       <rect>
-        <x>730</x>
-        <y>20</y>
-        <width>221</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">#groupBox_12
-{
-background-color: rgb(197, 197, 197);
-}</string>
-      </property>
-      <property name="title">
-       <string>CheckBox效果</string>
-      </property>
       <widget class="QCheckBox" name="checkBox">
        <property name="geometry">
         <rect>
-         <x>50</x>
-         <y>30</y>
+         <x>250</x>
+         <y>830</y>
          <width>140</width>
          <height>30</height>
         </rect>
@@ -2501,30 +2004,11 @@ background-color: rgb(197, 197, 197);
         <string>CheckBox</string>
        </property>
       </widget>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_13">
-      <property name="geometry">
-       <rect>
-        <x>730</x>
-        <y>120</y>
-        <width>221</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">#groupBox_13
-{
-background-color: rgb(197, 197, 197);
-}</string>
-      </property>
-      <property name="title">
-       <string>RadioButton效果</string>
-      </property>
       <widget class="QRadioButton" name="radioButton">
        <property name="geometry">
         <rect>
-         <x>40</x>
-         <y>30</y>
+         <x>250</x>
+         <y>870</y>
          <width>140</width>
          <height>30</height>
         </rect>
@@ -2533,67 +2017,591 @@ background-color: rgb(197, 197, 197);
         <string>RadioButton</string>
        </property>
       </widget>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_14">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>120</y>
-        <width>221</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">#groupBox_14
-{
-background-color: rgb(197, 197, 197);
-}</string>
-      </property>
-      <property name="title">
-       <string>DialogButtonBox效果</string>
-      </property>
-      <widget class="QDialogButtonBox" name="buttonBox">
+      <widget class="QGroupBox" name="groupBox_20">
        <property name="geometry">
         <rect>
-         <x>0</x>
-         <y>30</y>
+         <x>570</x>
+         <y>420</y>
+         <width>171</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>按钮</string>
+       </property>
+       <widget class="QSpinBox" name="spinBox_12">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>90</y>
+          <width>91</width>
+          <height>18</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_40">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>89</y>
+          <width>54</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>圆角大小:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_13">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>59</y>
+          <width>91</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="value">
+         <number>1</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_41">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>58</y>
+          <width>54</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>边框大小:</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_14">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>29</y>
+          <width>91</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string extracomment="无边框">none</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="实线">solid</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="点状">dotted</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="虚线">dashed</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="双线">double</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="3D凹槽">groove </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="3D垄状">ridge</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="3Dinset">inset </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="3Doutset">outset </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="从父元素继承">inherit </string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_78">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>29</y>
+          <width>54</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>边框风格:</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>480</y>
+         <width>551</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Slider</string>
+       </property>
+       <widget class="QSpinBox" name="spinBox_8">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>50</y>
+          <width>91</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>-10</number>
+        </property>
+        <property name="value">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_26">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>20</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>左缩进:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_6">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>20</y>
+          <width>91</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="value">
+         <number>5</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_25">
+        <property name="geometry">
+         <rect>
+          <x>13</x>
+          <y>20</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>进度条宽度大小:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_7">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>20</y>
+          <width>91</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>-10</number>
+        </property>
+        <property name="value">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_51">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>50</y>
+          <width>41</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>右缩进:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_31">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>按钮宽度大小:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_9">
+        <property name="geometry">
+         <rect>
+          <x>109</x>
+          <y>50</y>
+          <width>91</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="value">
+         <number>5</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_29">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>20</y>
+          <width>54</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>按钮上高:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_10">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>20</y>
+          <width>91</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>-10</number>
+        </property>
+        <property name="value">
+         <number>-3</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_11">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>50</y>
+          <width>91</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>-10</number>
+        </property>
+        <property name="value">
+         <number>-3</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_77">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>50</y>
+          <width>54</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>按钮下高:</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_28">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>680</y>
+         <width>54</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>颜色范围:</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_7">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>680</y>
+         <width>100</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>基础组件</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Slider</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ScrollBar</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>TabWidget</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>TableWidget</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>420</y>
+         <width>551</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>ScrollBar</string>
+       </property>
+       <widget class="QSpinBox" name="spinBox_15">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>20</y>
+          <width>100</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="value">
+         <number>18</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_14">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>20</y>
+          <width>101</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>-10</number>
+        </property>
+        <property name="value">
+         <number>18</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_27">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>54</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>箭头高度:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_30">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>20</y>
+          <width>54</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>padding:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_16">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>20</y>
+          <width>100</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="value">
+         <number>14</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_50">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>20</y>
+          <width>54</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>按钮高度:</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_23">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>391</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>QSS代码</string>
+    </property>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>371</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:15pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_26">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>391</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>效果浏览</string>
+    </property>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>371</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>90</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>花狗制作</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <widget class="QLineEdit" name="lineEdit_13">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>90</y>
+         <width>171</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>80 Decibels</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>花狗显示</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>80</y>
          <width>140</width>
          <height>30</height>
         </rect>
        </property>
-       <property name="standardButtons">
-        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+       <property name="text">
+        <string>花狗显示</string>
        </property>
       </widget>
      </widget>
-    </widget>
-    <widget class="QWidget" name="tab_5">
-     <attribute name="title">
-      <string>进度条组件</string>
-     </attribute>
-     <widget class="QGroupBox" name="groupBox_17">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>211</width>
-        <height>191</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">#groupBox_17
-{
-background-color: rgb(197, 197, 197);
-}</string>
-      </property>
-      <property name="title">
-       <string>ScrollBar效果</string>
-      </property>
+     <widget class="QWidget" name="page_4">
       <widget class="QScrollBar" name="verticalScrollBar">
        <property name="geometry">
         <rect>
-         <x>100</x>
-         <y>20</y>
+         <x>170</x>
+         <y>30</y>
          <width>15</width>
          <height>161</height>
         </rect>
@@ -2609,29 +2617,12 @@ background-color: rgb(197, 197, 197);
        </property>
       </widget>
      </widget>
-     <widget class="QGroupBox" name="groupBox_18">
-      <property name="geometry">
-       <rect>
-        <x>240</x>
-        <y>10</y>
-        <width>211</width>
-        <height>191</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">#groupBox_18
-{
-background-color: rgb(197, 197, 197);
-}</string>
-      </property>
-      <property name="title">
-       <string>Slider效果</string>
-      </property>
+     <widget class="QWidget" name="page_5">
       <widget class="QSlider" name="horizontalSlider_13">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>80</y>
+         <x>100</x>
+         <y>90</y>
          <width>161</width>
          <height>21</height>
         </rect>
@@ -2644,29 +2635,12 @@ background-color: rgb(197, 197, 197);
        </property>
       </widget>
      </widget>
-     <widget class="QGroupBox" name="groupBox_19">
-      <property name="geometry">
-       <rect>
-        <x>470</x>
-        <y>10</y>
-        <width>221</width>
-        <height>191</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">#groupBox_19
-{
-background-color: rgb(197, 197, 197);
-}</string>
-      </property>
-      <property name="title">
-       <string>Progressbar效果</string>
-      </property>
+     <widget class="QWidget" name="page_6">
       <widget class="QProgressBar" name="progressBar">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>80</y>
+         <x>100</x>
+         <y>90</y>
          <width>181</width>
          <height>23</height>
         </rect>
@@ -2676,123 +2650,150 @@ background-color: rgb(197, 197, 197);
        </property>
       </widget>
      </widget>
-    </widget>
-    <widget class="QWidget" name="tab_8">
-     <attribute name="title">
-      <string>TabWidget</string>
-     </attribute>
-     <widget class="QTabWidget" name="tabWidget_2">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>10</y>
-        <width>951</width>
-        <height>361</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="currentIndex">
-       <number>3</number>
-      </property>
-      <widget class="QWidget" name="tab_3">
-       <attribute name="title">
-        <string>宣传组</string>
-       </attribute>
-       <widget class="QPushButton" name="pushButton_2">
+     <widget class="QWidget" name="page_7">
+      <widget class="QToolBox" name="toolBox">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>40</y>
+         <width>69</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>2</number>
+       </property>
+       <widget class="QWidget" name="page_9">
         <property name="geometry">
          <rect>
-          <x>60</x>
-          <y>40</y>
-          <width>75</width>
-          <height>23</height>
+          <x>0</x>
+          <y>0</y>
+          <width>69</width>
+          <height>43</height>
          </rect>
         </property>
-        <property name="text">
-         <string>1</string>
-        </property>
+        <attribute name="label">
+         <string>菜单一</string>
+        </attribute>
        </widget>
-      </widget>
-      <widget class="QWidget" name="tab_4">
-       <attribute name="title">
-        <string>媒体组</string>
-       </attribute>
-       <widget class="QPushButton" name="pushButton_3">
-        <property name="geometry">
-         <rect>
-          <x>100</x>
-          <y>40</y>
-          <width>75</width>
-          <height>23</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>2</string>
-        </property>
+       <widget class="QWidget" name="page_12">
+        <attribute name="label">
+         <string>菜单二</string>
+        </attribute>
        </widget>
-      </widget>
-      <widget class="QWidget" name="tab_10">
-       <attribute name="title">
-        <string>文创组</string>
-       </attribute>
-       <widget class="QPushButton" name="pushButton_4">
+       <widget class="QWidget" name="page_10">
         <property name="geometry">
          <rect>
-          <x>180</x>
-          <y>40</y>
-          <width>75</width>
-          <height>23</height>
+          <x>0</x>
+          <y>0</y>
+          <width>69</width>
+          <height>43</height>
          </rect>
         </property>
-        <property name="text">
-         <string>3</string>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="tab_11">
-       <attribute name="title">
-        <string>广播组</string>
-       </attribute>
-       <widget class="QPushButton" name="pushButton_5">
-        <property name="geometry">
-         <rect>
-          <x>280</x>
-          <y>40</y>
-          <width>75</width>
-          <height>23</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>4</string>
-        </property>
+        <attribute name="label">
+         <string>菜单三</string>
+        </attribute>
        </widget>
       </widget>
      </widget>
-    </widget>
-    <widget class="QWidget" name="tab_2">
-     <attribute name="title">
-      <string>表格</string>
-     </attribute>
-     <widget class="QGroupBox" name="groupBox_16">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>963</width>
-        <height>531</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>TableWidget效果</string>
-      </property>
+     <widget class="QWidget" name="page_8">
+      <widget class="QTabWidget" name="tabWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>351</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>宣传组</string>
+        </attribute>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>40</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_4">
+        <attribute name="title">
+         <string>媒体组</string>
+        </attribute>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>40</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_10">
+        <attribute name="title">
+         <string>文创组</string>
+        </attribute>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>30</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_11">
+        <attribute name="title">
+         <string>广播组</string>
+        </attribute>
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>30</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_11">
       <widget class="QTableWidget" name="tableWidget">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>20</y>
-         <width>931</width>
-         <height>501</height>
+         <x>10</x>
+         <y>10</y>
+         <width>351</width>
+         <height>191</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -2942,6 +2943,125 @@ border-left-width:0;
       </widget>
      </widget>
     </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_16">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>1171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>请选择控件演示：</string>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QRadioButton" name="radioButton_2">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Label</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_9">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>LineEdit</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_8">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_3">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>ScrollBar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_4">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Slider</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_5">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Progressbar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_7">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>ToolBox</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_6">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>TabWidget</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
  </widget>
