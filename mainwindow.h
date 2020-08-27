@@ -2,7 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include<QMovie>
+#include<QSize>
 namespace Ui {
 class MainWindow;
 }
@@ -11,6 +12,8 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
     int control=0;
+    QMovie * m_movie;                   //添加动态图
+    QSize m_si;                         //动态图压缩大小
 public:
 
     explicit MainWindow(QWidget *parent = 0);
@@ -125,6 +128,18 @@ private slots:
     void on_comboBox_4_currentIndexChanged(int index);
 
     void on_comboBox_5_currentIndexChanged(int index);
+
+    void on_radioButton_10_clicked();
+
+    void on_spinBox_18_valueChanged(int arg1);
+
+    void on_spinBox_17_valueChanged(int arg1);
+
+    void on_spinBox_19_valueChanged(int arg1);
+
+    void on_radioButton_11_clicked();
+
+    void on_radioButton_12_clicked();
 
 private:
     Ui::MainWindow *ui;

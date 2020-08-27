@@ -10,6 +10,16 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->label->setText("花狗制作");
+    //加载动态图
+    m_movie = new QMovie(":/lib/dongtaitu.gif");
+    //设置动态图大小
+    m_si.setWidth(200);
+    m_si.setHeight(200);
+    m_movie->setScaledSize(m_si);
+    //标签加载动态图
+    ui->label_79->setMovie(m_movie);
+    //开始
+    m_movie->start();
 }
 
 MainWindow::~MainWindow()
@@ -73,6 +83,9 @@ void MainWindow::Labelshow()
     QString str_21 = QString("font-style:%1;").arg(ui->comboBox_3->currentText());
     QString str_22 = QString("font-weight: %1;").arg(ui->comboBox_4->currentText());
     QString str_23 = QString("text-decoration:%1;").arg(ui->comboBox_5->currentText());
+    QString str_24 = QString("height:%1px;").arg(ui->spinBox_18->value());
+    QString str_25 = QString("width:%1px;").arg(ui->spinBox_17->value());
+    QString str_26 = QString("width:%1px;").arg(ui->spinBox_18->value());
     //int control = ui->comboBox_7->currentIndex();
     QString s;
     switch (control)
@@ -112,16 +125,35 @@ void MainWindow::Labelshow()
         ui->textEdit->setText(s);
         break;
     case 5:
+        s = "QProgressBar{"+str_1+str_2+str_3+str_4+str_5+str_6+str_7+"text-align: center;"+"}"+"QProgressBar::chunk{"+str_11+str_26+"}";
+        ui->progressBar->setStyleSheet(s);
+        ui->textEdit->setText(s);
         break;
     case 6:
-        s="::tab{"+str_1+str_2+str_3+str_4+str_5+str_6+str_7+str_8+str_16+"}";
+        s="QWidget::tab{"+str_1+str_2+str_3+str_4+str_5+str_6+str_7+str_24+str_25+"}";
         //qDebug()<<s;
         ui->tabWidget_2->setStyleSheet(s);
         ui->textEdit->setText(s);
         break;
     case 7:
+        s="QToolBox::tab {"+str_1+str_2+str_3+str_4+str_5+str_6+str_7+"}";
+        ui->toolBox->setStyleSheet(s);
+        ui->textEdit->setText(s);
         break;
-
+    case 8:
+        break;
+    case 9:
+        s = str_1+str_2+str_3+str_4+str_5+str_6+str_7+str_21+str_22+str_23;
+        ui->checkBox->setStyleSheet(s);
+        ui->textEdit->setText(s);
+        break;
+    case 10:
+        s = str_1+str_2+str_3+str_4+str_5+str_6+str_7+str_21+str_22+str_23;
+        ui->radioButton->setStyleSheet(s);
+        ui->textEdit->setText(s);
+        break;
+    case 11:
+        break;
     default:
         break;
     }
@@ -487,4 +519,37 @@ void MainWindow::on_comboBox_4_currentIndexChanged(int index)
 void MainWindow::on_comboBox_5_currentIndexChanged(int index)
 {
     Labelshow();
+}
+
+void MainWindow::on_radioButton_10_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(11);
+    control = 11;
+}
+
+void MainWindow::on_spinBox_18_valueChanged(int arg1)
+{
+    Labelshow();
+}
+
+void MainWindow::on_spinBox_17_valueChanged(int arg1)
+{
+    Labelshow();
+}
+
+void MainWindow::on_spinBox_19_valueChanged(int arg1)
+{
+    Labelshow();
+}
+
+void MainWindow::on_radioButton_11_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(9);
+    control = 9;
+}
+
+void MainWindow::on_radioButton_12_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(10);
+    control = 10;
 }
