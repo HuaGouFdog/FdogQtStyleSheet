@@ -86,6 +86,16 @@ void MainWindow::Labelshow()
     QString str_24 = QString("height:%1px;").arg(ui->spinBox_18->value());
     QString str_25 = QString("width:%1px;").arg(ui->spinBox_17->value());
     QString str_26 = QString("width:%1px;").arg(ui->spinBox_18->value());
+    QString str_27 = QString("spacing:%1px;").arg(ui->spinBox_21->value());
+    QString str_28 = QString("width:%1px;height:%2px;").arg(ui->spinBox_22->value()).arg(ui->spinBox_22->value());
+//    QCheckBox
+//    {
+//    spacing:5px;
+//    }
+//    QCheckBox::indicator
+//    {
+
+//    }
     //int control = ui->comboBox_7->currentIndex();
     QString s;
     switch (control)
@@ -143,12 +153,12 @@ void MainWindow::Labelshow()
     case 8:
         break;
     case 9:
-        s = str_1+str_2+str_3+str_4+str_5+str_6+str_7+str_21+str_22+str_23;
+        s = "QCheckBox{"+str_1+str_2+str_3+str_4+str_5+str_6+str_7+str_21+str_22+str_23+str_27+"}"+"QCheckBox::indicator{"+str_28+str_11+str_12+"}";
         ui->checkBox->setStyleSheet(s);
         ui->textEdit->setText(s);
         break;
     case 10:
-        s = str_1+str_2+str_3+str_4+str_5+str_6+str_7+str_21+str_22+str_23;
+       s = "QRadioButton{"+str_1+str_2+str_3+str_4+str_5+str_6+str_7+str_21+str_22+str_23+str_27+"}"+"QRadioButton::indicator{"+str_28+str_11+str_12+"}";
         ui->radioButton->setStyleSheet(s);
         ui->textEdit->setText(s);
         break;
@@ -552,4 +562,14 @@ void MainWindow::on_radioButton_12_clicked()
 {
     ui->stackedWidget->setCurrentIndex(10);
     control = 10;
+}
+
+void MainWindow::on_spinBox_21_valueChanged(int arg1)
+{
+    Labelshow();
+}
+
+void MainWindow::on_spinBox_22_valueChanged(int arg1)
+{
+    Labelshow();
 }

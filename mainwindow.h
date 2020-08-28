@@ -141,6 +141,10 @@ private slots:
 
     void on_radioButton_12_clicked();
 
+    void on_spinBox_21_valueChanged(int arg1);
+
+    void on_spinBox_22_valueChanged(int arg1);
+
 private:
     Ui::MainWindow *ui;
 };

@@ -35,8 +35,8 @@
     </property>
     <property name="minimumSize">
      <size>
-      <width>0</width>
-      <height>0</height>
+      <width>781</width>
+      <height>573</height>
      </size>
     </property>
     <property name="maximumSize">
@@ -128,7 +128,7 @@ QSlider::handle:horizontal:disabled {
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>-268</y>
+        <y>-752</y>
         <width>751</width>
         <height>1500</height>
        </rect>
@@ -851,7 +851,7 @@ QSlider::handle:horizontal:disabled {
         </size>
        </property>
        <property name="title">
-        <string>渐变色①</string>
+        <string>Slider渐变色①</string>
        </property>
        <layout class="QGridLayout" name="gridLayout_7">
         <item row="0" column="0">
@@ -1199,7 +1199,7 @@ QSlider::handle:horizontal:disabled {
         </size>
        </property>
        <property name="title">
-        <string>渐变色②</string>
+        <string>Slider渐变色②</string>
        </property>
        <layout class="QGridLayout" name="gridLayout_8">
         <item row="0" column="0">
@@ -1941,8 +1941,8 @@ QSlider::handle:horizontal:disabled {
       <widget class="QDialogButtonBox" name="buttonBox">
        <property name="geometry">
         <rect>
-         <x>590</x>
-         <y>780</y>
+         <x>340</x>
+         <y>920</y>
          <width>140</width>
          <height>30</height>
         </rect>
@@ -1954,8 +1954,8 @@ QSlider::handle:horizontal:disabled {
       <widget class="QSpinBox" name="spinBox_5">
        <property name="geometry">
         <rect>
-         <x>590</x>
-         <y>860</y>
+         <x>340</x>
+         <y>1000</y>
          <width>140</width>
          <height>30</height>
         </rect>
@@ -1964,8 +1964,8 @@ QSlider::handle:horizontal:disabled {
       <widget class="QComboBox" name="comboBox_6">
        <property name="geometry">
         <rect>
-         <x>590</x>
-         <y>820</y>
+         <x>340</x>
+         <y>960</y>
          <width>140</width>
          <height>30</height>
         </rect>
@@ -2305,8 +2305,8 @@ QSlider::handle:horizontal:disabled {
       <widget class="QLabel" name="label_28">
        <property name="geometry">
         <rect>
-         <x>410</x>
-         <y>780</y>
+         <x>160</x>
+         <y>920</y>
          <width>54</width>
          <height>16</height>
         </rect>
@@ -2318,8 +2318,8 @@ QSlider::handle:horizontal:disabled {
       <widget class="QComboBox" name="comboBox_7">
        <property name="geometry">
         <rect>
-         <x>470</x>
-         <y>780</y>
+         <x>220</x>
+         <y>920</y>
          <width>100</width>
          <height>20</height>
         </rect>
@@ -2679,16 +2679,29 @@ QSlider::handle:horizontal:disabled {
         </property>
        </widget>
       </widget>
+      <widget class="QGroupBox" name="groupBox_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>690</y>
+         <width>731</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>TableWidget</string>
+       </property>
+      </widget>
      </widget>
     </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_23">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>300</y>
-      <width>391</width>
-      <height>331</height>
+      <x>-10</x>
+      <y>298</y>
+      <width>411</width>
+      <height>333</height>
      </rect>
     </property>
     <property name="title">
@@ -2723,11 +2736,17 @@ p, li { white-space: pre-wrap; }
    <widget class="QGroupBox" name="groupBox_26">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>-10</x>
       <y>50</y>
-      <width>391</width>
-      <height>241</height>
+      <width>411</width>
+      <height>243</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>411</width>
+      <height>243</height>
+     </size>
     </property>
     <property name="title">
      <string>效果浏览</string>
@@ -2737,7 +2756,7 @@ p, li { white-space: pre-wrap; }
       <rect>
        <x>10</x>
        <y>20</y>
-       <width>371</width>
+       <width>391</width>
        <height>211</height>
       </rect>
      </property>
@@ -2745,7 +2764,7 @@ p, li { white-space: pre-wrap; }
       <string notr="true"/>
      </property>
      <property name="currentIndex">
-      <number>10</number>
+      <number>8</number>
      </property>
      <widget class="QWidget" name="page">
       <widget class="QLabel" name="label">
@@ -3013,7 +3032,7 @@ p, li { white-space: pre-wrap; }
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>351</width>
+         <width>371</width>
          <height>191</height>
         </rect>
        </property>
@@ -3046,66 +3065,12 @@ border-left-width:0;
        <attribute name="horizontalHeaderStretchLastSection">
         <bool>true</bool>
        </attribute>
-       <row>
-        <property name="text">
-         <string>新建行</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>新建行</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>新建行</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>新建行</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>新建行</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>新建行</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>新建行</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>新建行</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>新建行</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>新建行</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>新建行</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>新建行</string>
-        </property>
-       </row>
+       <attribute name="verticalHeaderDefaultSectionSize">
+        <number>24</number>
+       </attribute>
+       <attribute name="verticalHeaderMinimumSectionSize">
+        <number>21</number>
+       </attribute>
        <row>
         <property name="text">
          <string>新建行</string>
@@ -3154,11 +3119,6 @@ border-left-width:0;
        <column>
         <property name="text">
          <string>籍贯</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>现住址</string>
         </property>
        </column>
       </widget>
@@ -3224,6 +3184,12 @@ border-left-width:0;
       <width>1171</width>
       <height>51</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1171</width>
+      <height>51</height>
+     </size>
     </property>
     <property name="title">
      <string>请选择控件演示：</string>
@@ -3356,6 +3322,19 @@ border-left-width:0;
        </property>
        <property name="text">
         <string>ToolBox</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_13">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>TableWidget</string>
        </property>
       </widget>
      </item>
