@@ -20,6 +20,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->label_79->setMovie(m_movie);
     //开始
     m_movie->start();
+    ui->tableWidget->setAlternatingRowColors(true);
 }
 
 MainWindow::~MainWindow()
@@ -88,28 +89,16 @@ void MainWindow::Labelshow()
     QString str_26 = QString("width:%1px;").arg(ui->spinBox_18->value());
     QString str_27 = QString("spacing:%1px;").arg(ui->spinBox_21->value());
     QString str_28 = QString("width:%1px;height:%2px;").arg(ui->spinBox_22->value()).arg(ui->spinBox_22->value());
-//    QCheckBox
-//    {
-//    spacing:5px;
-//    }
-//    QCheckBox::indicator
-//    {
-
-//    }
-    //int control = ui->comboBox_7->currentIndex();
+    QString str_29 = QString("alternate-background-color:rgba(%1,%2,%3,%4);").arg(ui->horizontalSlider_22->value())
+            .arg(ui->horizontalSlider_23->value()).arg(ui->horizontalSlider_24->value()).arg(ui->horizontalSlider_25->value());
+    QString str_30 = QString("gridline-color:rgba(%1,%2,%3,%4);").arg(ui->horizontalSlider_26->value())
+            .arg(ui->horizontalSlider_27->value()).arg(ui->horizontalSlider_28->value()).arg(ui->horizontalSlider_29->value());
     QString s;
     switch (control)
     {
     case 0:
         s = str_1+str_2+str_3+str_4+str_5+str_6+str_7+str_21+str_22+str_23;
         ui->label->setStyleSheet(s);
-//            ui->pushButton->setStyleSheet(s);
-//            ui->lineEdit_13->setStyleSheet(s);
-//            ui->comboBox_6->setStyleSheet(s);
-//            ui->spinBox_5->setStyleSheet(s);
-//            ui->buttonBox->setStyleSheet(s);
-//            ui->checkBox->setStyleSheet(s);
-//            ui->radioButton->setStyleSheet(s);
         ui->textEdit->setText(s);
         break;
     case 1:
@@ -151,6 +140,9 @@ void MainWindow::Labelshow()
         ui->textEdit->setText(s);
         break;
     case 8:
+        s="QTableWidget{"+str_1+str_2+str_3+str_4+str_5+str_6+str_29+str_30+str_7+"}"+"QHeaderView::section{"+str_4+str_5+str_6+str_11+str_12+"}";
+        ui->tableWidget->setStyleSheet(s);
+        ui->textEdit->setText(s);
         break;
     case 9:
         s = "QCheckBox{"+str_1+str_2+str_3+str_4+str_5+str_6+str_7+str_21+str_22+str_23+str_27+"}"+"QCheckBox::indicator{"+str_28+str_11+str_12+"}";
@@ -572,4 +564,10 @@ void MainWindow::on_spinBox_21_valueChanged(int arg1)
 void MainWindow::on_spinBox_22_valueChanged(int arg1)
 {
     Labelshow();
+}
+
+void MainWindow::on_radioButton_13_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(8);
+    control = 8;
 }
