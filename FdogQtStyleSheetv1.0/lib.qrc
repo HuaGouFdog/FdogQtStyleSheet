@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>lib/icon.jpg</file>
+        <file>lib/dongtaitu.gif</file>
+        <file>lib/icon_2.jpg</file>
+    </qresource>
+</RCC>
