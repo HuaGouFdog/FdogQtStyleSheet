@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>lib/guanbi.png</file>
+        <file>lib/hebing.png</file>
+        <file>lib/icon.png</file>
+        <file>lib/icon_2.png</file>
+        <file>lib/xuanxiang.png</file>
+        <file>lib/zhankai.png</file>
+        <file>lib/zuidahua.png</file>
+        <file>lib/zuixiao.png</file>
+    </qresource>
+</RCC>
